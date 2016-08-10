@@ -17,7 +17,7 @@ class SolrConnectorDemo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      solrSearchUrl: "http://localhost:8983/solr/gettingstarted/select",
+      solrSearchUrl: "http://192.12.242.139:8983/solr/fixr_delta/select",
       query: "*:*",
       filter: "",
       fetchFields: ""
