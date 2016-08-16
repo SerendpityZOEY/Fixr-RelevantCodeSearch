@@ -1,14 +1,37 @@
 import React from 'react';
 
+import {List, ListItem} from 'material-ui/List';
+import ActionGrade from 'material-ui/svg-icons/action/grade';
+import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import ContentDrafts from 'material-ui/svg-icons/content/drafts';
+import ContentSend from 'material-ui/svg-icons/content/send';
+import Subheader from 'material-ui/Subheader';
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
 MyComponents.Detail = React.createClass({
 
   render: function() {
     return (
-        <li className="collection-item black-text">
-          <p><b>Version:</b> {this.props.commit._version_}</p>
-          <p><b>Commit: </b>{this.props.commit.commit}</p>
-          <p><b>Committer Name: </b>{this.props.commit.committerName}</p>
-          <p><b>Author Name: </b>{this.props.commit.authorName__}</p> </li>
+          <ListItem
+              primaryText={this.props.commit._version_}
+              leftIcon={<ContentInbox />}
+              initiallyOpen={false}
+              primaryTogglesNestedList={true}
+              nestedItems={[
+                <ListItem
+                    key={1}
+                    primaryText={this.props.commit.c_email_sni}
+                />,
+                <ListItem
+                    key={2}
+                    primaryText={this.props.commit.c_date_tdt}
+                />,
+              ]}
+          />
     );
   }
 });
@@ -43,7 +66,9 @@ class SolrConnectorDemo extends React.Component {
     this.props.doSearch(searchParams);
   }
 
-
+  getChildContext() {
+    return { muiTheme: getMuiTheme(baseTheme) };
+  }
 
   render() {
 
@@ -60,19 +85,19 @@ class SolrConnectorDemo extends React.Component {
     }
 
     return <div className="row">
-      <div className="col s12 m6 l6">
+      <div className="col s12 m5 l5">
       <div className="row">
         <div className="col s10 push-s1">
       <form className="inputForm" onSubmit={this.onSubmit.bind(this)}>
         <h4>searchParams:</h4>
-        <div className="col s12 m12 l6">
+        <div className="col s12 m12 l12">
         <p>
           solrSearchUrl: {" "}
           <input type="text" value={this.state.solrSearchUrl}
             onChange={e => {this.setState({ solrSearchUrl: e.target.value })}} />
         </p>
         </div>
-        <div className="col s12 m12 l6">
+        <div className="col s12 m12 l12">
         <p>
           query: {" "}
           <input type="text" value={this.state.query}
@@ -80,14 +105,14 @@ class SolrConnectorDemo extends React.Component {
           {" "}
           </p>
         </div>
-        <div className="col s12 m12 l6">
+        <div className="col s12 m12 l12">
         <p>
           filter: {" "}
           <input type="text" value={this.state.filter}
             onChange={e => {this.setState({ filter: e.target.value })}} />
         </p>
         </div>
-        <div className="col s12 m12 l6">
+        <div className="col s12 m12 l12">
         <p>
           fetchFields: {" "}
           <input type="text" value={this.state.fetchFields}
@@ -102,27 +127,18 @@ class SolrConnectorDemo extends React.Component {
       </div>
         </div>
 
-      <div className="col s12 m6 l6">
-      <div className="row">
-        <div className="col s10 push-s1">
-        <div className="card black lighten-1">
-          <div className="row">
-            <div className="col s12">
-              <div className="card black darken-2">
-                <div className="card-content white-text">
-                  <ul className="collection white-text">
-                    {commitObjs}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+      <div className="col s12 m7 l7">
+        <List>
+          <Subheader>Commit Objects</Subheader>
+          {commitObjs}
+        </List>
       </div>
       </div>;
   }
 }
+
+SolrConnectorDemo.childContextTypes = {
+  muiTheme: React.PropTypes.object.isRequired,
+};
 
 export default SolrConnectorDemo;

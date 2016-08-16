@@ -5,6 +5,7 @@ import SolrConnectorDemo from './demo.js';
 import Navbar from './navbar.js';
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
