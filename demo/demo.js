@@ -59,19 +59,20 @@ class SolrConnectorDemo extends React.Component {
       commitObjs = 'null'
     }
 
-    return <div>
+    return <div className="row">
+      <div className="col s12 m6 l6">
       <div className="row">
         <div className="col s10 push-s1">
       <form className="inputForm" onSubmit={this.onSubmit.bind(this)}>
         <h4>searchParams:</h4>
-        <div className="col s6">
+        <div className="col s12 m12 l6">
         <p>
           solrSearchUrl: {" "}
           <input type="text" value={this.state.solrSearchUrl}
             onChange={e => {this.setState({ solrSearchUrl: e.target.value })}} />
         </p>
         </div>
-        <div className="col s6">
+        <div className="col s12 m12 l6">
         <p>
           query: {" "}
           <input type="text" value={this.state.query}
@@ -79,14 +80,14 @@ class SolrConnectorDemo extends React.Component {
           {" "}
           </p>
         </div>
-        <div className="col s6">
+        <div className="col s12 m12 l6">
         <p>
           filter: {" "}
           <input type="text" value={this.state.filter}
             onChange={e => {this.setState({ filter: e.target.value })}} />
         </p>
         </div>
-        <div className="col s6">
+        <div className="col s12 m12 l6">
         <p>
           fetchFields: {" "}
           <input type="text" value={this.state.fetchFields}
@@ -99,7 +100,9 @@ class SolrConnectorDemo extends React.Component {
       </form>
           </div>
       </div>
+        </div>
 
+      <div className="col s12 m6 l6">
       <div className="row">
         <div className="col s10 push-s1">
         <div className="card black lighten-1">
@@ -116,6 +119,7 @@ class SolrConnectorDemo extends React.Component {
           </div>
         </div>
         </div>
+      </div>
       </div>
       </div>;
   }
