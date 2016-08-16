@@ -9,7 +9,10 @@ $npm install
 
 ## Running
 
-- Run with 'npm start'
+- Run with:
+```
+$npm start
+```
 
 Then view the page through this url:
 ```
