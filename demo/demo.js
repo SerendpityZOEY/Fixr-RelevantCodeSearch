@@ -9,8 +9,89 @@ import Subheader from 'material-ui/Subheader';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
+import {Tabs, Tab} from 'material-ui/Tabs';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
+
+const styles = {
+  headline: {
+    fontSize: 24,
+    paddingTop: 16,
+    marginBottom: 12,
+    fontWeight: 400,
+  },
+  table:{
+    fontSize:12
+  }
+};
+
+MyComponents.Compare = React.createClass({
+  render: function(){
+    return(
+    <table>
+      <thead>
+      <tr>
+        <th data-field="id">Attribute</th>
+        <th data-field="name">Previous</th>
+        <th data-field="price">Current</th>
+      </tr>
+      </thead>
+
+      <tbody style={styles.table}>
+        <tr>
+          <td>
+            user_sni
+          </td>
+          <td>
+            {this.props.commit.p_user_sni}
+          </td>
+          <td>
+            {this.props.commit.c_user_sni}
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            email_sni
+          </td>
+          <td>
+            {this.props.commit.p_email_sni}
+          </td>
+          <td>
+            {this.props.commit.c_email_sni}
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            hash_sni
+          </td>
+          <td>
+            {this.props.commit.p_hash_sni}
+          </td>
+          <td>
+            {this.props.commit.c_hash_sni}
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            date_tdt
+          </td>
+          <td>
+            {this.props.commit.p_date_tdt}
+          </td>
+          <td>
+            {this.props.commit.c_date_tdt}
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    )
+  }
+});
 
 MyComponents.Detail = React.createClass({
 
@@ -22,6 +103,10 @@ MyComponents.Detail = React.createClass({
               initiallyOpen={false}
               primaryTogglesNestedList={true}
               nestedItems={[
+                <ListItem
+                    key={0}
+                    primaryText={"repo_sni : " + this.props.commit.repo_sni}
+                />,
                 <ListItem
                     key={1}
                     primaryText={"body_t: " + this.props.commit.c_body_t}
@@ -160,7 +245,7 @@ MyComponents.Detail = React.createClass({
                 />,
                 <ListItem
                     key={23}
-                    primaryText={"c_user_sni: "+this.props.commit.c_user_sni}
+                    primaryText={"user_sni: "+this.props.commit.c_user_sni}
                 />,
                 <ListItem
                     key={24}
@@ -214,6 +299,7 @@ class SolrConnectorDemo extends React.Component {
   render() {
 
     var commitObjs;
+    var compareObjs;
     if(this.props.solrConnector.response!=null){
       console.log('see',this.props.solrConnector.response.response.docs);
 
@@ -221,8 +307,13 @@ class SolrConnectorDemo extends React.Component {
         return <MyComponents.Detail commit={s} key={i}/>
       });
 
+      compareObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+        return <MyComponents.Compare commit={s} key={i}/>
+      });
+
     }else{
-      commitObjs = 'null'
+      commitObjs = 'null';
+      compareObjs = 'null';
     }
 
     return <div className="row">
@@ -268,7 +359,7 @@ class SolrConnectorDemo extends React.Component {
           </p>
         </div>
         <p>
-          <button className="waves-effect waves-light btn" type="submit">Search</button>
+          <button className="waves-effect waves-light btn deep-purple darken-3" type="submit">Search</button>
         </p>
       </form>
           </div>
@@ -276,10 +367,22 @@ class SolrConnectorDemo extends React.Component {
         </div>
 
       <div className="col s12 m7 l7">
-        <List>
-          <Subheader>Commit Objects</Subheader>
-          {commitObjs}
-        </List>
+        <Tabs>
+          <Tab label="Commit Objects" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
+          <List>
+            <Subheader>Commit Objects</Subheader>
+            {commitObjs}
+          </List>
+          </Tab>
+
+          <Tab label="Compare" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
+            <div>
+              <h2 style={styles.headline}>Compare Versions</h2>
+                {compareObjs}
+            </div>
+          </Tab>
+
+          </Tabs>
       </div>
       </div>;
   }
