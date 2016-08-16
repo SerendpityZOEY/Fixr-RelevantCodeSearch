@@ -24,11 +24,151 @@ MyComponents.Detail = React.createClass({
               nestedItems={[
                 <ListItem
                     key={1}
-                    primaryText={this.props.commit.c_email_sni}
+                    primaryText={"body_t: " + this.props.commit.c_body_t}
                 />,
                 <ListItem
                     key={2}
-                    primaryText={this.props.commit.c_date_tdt}
+                    primaryText="callsites_added_cs: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_callsites_added_cs}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={3}
+                    primaryText="callsites_added_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_callsites_added_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={4}
+                    primaryText="callsites_cs: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_callsites_cs}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={5}
+                    primaryText="callsites_removed_cs: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_callsites_removed_cs}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={6}
+                    primaryText="callsites_removed_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_callsites_removed_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={7}
+                    primaryText="callsites_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_callsites_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={8}
+                    primaryText="comments_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_comments_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={9}
+                    primaryText="contents_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_contents_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={10}
+                    primaryText={"date_tdt: "+this.props.commit.c_date_tdt}
+                />,
+                <ListItem
+                    key={11}
+                    primaryText={"email_sni: "+this.props.commit.c_email_sni}
+                />,
+                <ListItem
+                    key={12}
+                    primaryText={"hash_sni: "+this.props.commit.c_hash_sni}
+                />,
+                <ListItem
+                    key={13}
+                    primaryText="imports_added_cs: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_imports_added_cs}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={14}
+                    primaryText="imports_added_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_imports_added_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={15}
+                    primaryText="imports_removed_cs: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_imports_removed_cs}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={16}
+                    primaryText="imports_removed_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_imports_removed_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={17}
+                    primaryText="imports_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_imports_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={18}
+                    primaryText="methods_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_methods_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={19}
+                    primaryText={"parents_ss: "+this.props.commit.c_parents_ss}
+                />,
+                <ListItem
+                    key={20}
+                    primaryText="patch_no_context_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_patch_no_context_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={21}
+                    primaryText="patch_t: "
+                    nestedItems={[
+                      <ListItem key={1} primaryText={this.props.commit.c_patch_t}/>,
+                    ]}
+                />,
+                <ListItem
+                    key={22}
+                    primaryText={"subject_t: "+this.props.commit.c_subject_t}
+                />,
+                <ListItem
+                    key={23}
+                    primaryText={"c_user_sni: "+this.props.commit.c_user_sni}
+                />,
+                <ListItem
+                    key={24}
+                    primaryText={"id: "+ this.props.commit.id}
+                />,
+                <ListItem
+                    key={25}
+                    primaryText={"name_sni: "+this.props.commit.name_sni}
                 />,
               ]}
           />
@@ -43,7 +183,8 @@ class SolrConnectorDemo extends React.Component {
       solrSearchUrl: "http://192.12.242.139:8983/solr/fixr_delta/select",
       query: "*:*",
       filter: "",
-      fetchFields: ""
+      fetchFields: "",
+      rows: 10
     }
   }
 
@@ -55,7 +196,7 @@ class SolrConnectorDemo extends React.Component {
       filter: [this.state.filter],
       fetchFields: this.state.fetchFields.split(" "),
       offset: 0,
-      limit: 10,
+      limit: this.state.rows,
       highlightParams: {
         "hl": "true",
         "hl.fl": "name manu",
@@ -118,6 +259,13 @@ class SolrConnectorDemo extends React.Component {
           <input type="text" value={this.state.fetchFields}
             onChange={e => {this.setState({ fetchFields: e.target.value })}} />
         </p>
+        </div>
+        <div className="col s12 m12 l12">
+          <p>
+            Number of Rows Displayed: {" "}
+            <input type="text" value={this.state.rows}
+                   onChange={e => {this.setState({ rows: e.target.value })}} />
+          </p>
         </div>
         <p>
           <button className="waves-effect waves-light btn" type="submit">Search</button>
