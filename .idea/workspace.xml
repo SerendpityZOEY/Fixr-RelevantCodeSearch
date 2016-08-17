@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/index.html" afterPath="$PROJECT_DIR$/demo/index.html" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +29,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -46,16 +58,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="412" column="16" selection-start-line="412" selection-start-column="16" selection-end-line="412" selection-end-column="16" />
+            <state relative-caret-position="372">
+              <caret line="275" column="116" selection-start-line="275" selection-start-column="39" selection-end-line="275" selection-end-column="116" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#461#594#0" expanded="false" />
                 <element signature="e#638#1859#0" expanded="false" />
-                <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+                <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,6 +88,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -101,7 +113,6 @@
         <option value="$PROJECT_DIR$/demo/data.jsx" />
         <option value="$PROJECT_DIR$/demo/js/navbar.js" />
         <option value="$PROJECT_DIR$/demo/navbar.js" />
-        <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/demo/list.js" />
         <option value="$PROJECT_DIR$/demo/test.js" />
@@ -109,7 +120,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/demo/demo.js" />
+        <option value="$PROJECT_DIR$/demo/styles.css" />
       </list>
     </option>
   </component>
@@ -217,6 +230,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="editor.config.accepted" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -872,12 +886,12 @@
       <workItem from="1470984776877" duration="623000" />
       <workItem from="1471327532414" duration="2306000" />
       <workItem from="1471366703509" duration="14854000" />
-      <workItem from="1471415092266" duration="13333000" />
+      <workItem from="1471415092266" duration="13908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49796000" />
+    <option name="totallyTimeSpent" value="50371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-18" y="23" width="1280" height="709" extended-state="0" />
@@ -927,16 +941,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/data.jsx" />
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
             <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -967,9 +979,8 @@
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
             <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1001,9 +1012,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
             <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1022,9 +1032,8 @@
           <caret line="46" column="71" selection-start-line="46" selection-start-column="71" selection-end-line="46" selection-end-column="71" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
             <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1054,9 +1063,8 @@
           <caret line="46" column="71" selection-start-line="46" selection-start-column="71" selection-end-line="46" selection-end-column="71" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
             <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1086,9 +1094,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
             <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1192,10 +1199,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/react-solr-connector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1210,24 +1225,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/react-solr-connector.js">
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-768">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="372">
+          <caret line="275" column="116" selection-start-line="275" selection-start-column="39" selection-end-line="275" selection-end-column="116" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#638#1859#0" expanded="false" />
+            <marker date="1471464160000" expanded="true" signature="8671:8748" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+    <entry file="file://$PROJECT_DIR$/demo/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="412" column="16" selection-start-line="412" selection-start-column="16" selection-end-line="412" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#461#594#0" expanded="false" />
-            <element signature="e#638#1859#0" expanded="false" />
-            <marker date="1471463075000" expanded="true" signature="8671:8748" ph="..." />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

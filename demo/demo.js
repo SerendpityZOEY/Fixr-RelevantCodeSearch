@@ -399,7 +399,7 @@ class SolrConnectorDemo extends React.Component {
       <div className="col s12 m7 l7">
         <Tabs>
           <Tab label="Commit Objects" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
-          <List>
+          <List id="list">
             <Subheader>Commit Objects</Subheader>
             {commitObjs}
           </List>
