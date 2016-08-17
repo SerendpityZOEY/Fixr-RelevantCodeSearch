@@ -29,7 +29,7 @@ MyComponents.Compare = React.createClass({
     <table>
       <thead>
       <tr>
-        <th data-field="id">Attribute</th>
+        <th data-field="id">Props</th>
         <th data-field="name">Previous</th>
         <th data-field="price">Current</th>
       </tr>
@@ -292,6 +292,7 @@ class SolrConnectorDemo extends React.Component {
       query: "*:*",
       filter: "",
       fetchFields: "",
+      offset:0,
       rows: 10
     }
   }
@@ -303,7 +304,7 @@ class SolrConnectorDemo extends React.Component {
       query: this.state.query,
       filter: [this.state.filter],
       fetchFields: this.state.fetchFields.split(" "),
-      offset: 0,
+      offset: this.state.offset,
       limit: this.state.rows,
       highlightParams: {
         "hl": "true",
@@ -382,11 +383,15 @@ class SolrConnectorDemo extends React.Component {
         </p>
         </div>
         <div className="col s12 m12 l12">
-          <p>
-            Number of Rows Displayed: {" "}
+            Number of Rows Displayed(start, rows): {" "}
+            <div className="col s12 m6 l6">
+            <input type="text" value={this.state.offset}
+                   onChange={e => {this.setState({ offset: e.target.value })}} placeholder="start(0)"/>
+                </div>
+            <div className="col s12 m6 l6">
             <input type="text" value={this.state.rows}
-                   onChange={e => {this.setState({ rows: e.target.value })}} />
-          </p>
+                   onChange={e => {this.setState({ rows: e.target.value })}} placeholder="rows(10)"/>
+                </div>
         </div>
         <p>
           <button className="waves-effect waves-light btn deep-purple darken-3" type="submit">Search</button>
@@ -407,7 +412,7 @@ class SolrConnectorDemo extends React.Component {
 
           <Tab label="Compare" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
             <div>
-              <h2 style={styles.headline}>Compare Versions</h2>
+                <Subheader>Compare Versions</Subheader>
                 {compareObjs}
             </div>
           </Tab>
