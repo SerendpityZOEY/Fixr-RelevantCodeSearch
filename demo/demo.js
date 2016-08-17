@@ -1,10 +1,7 @@
 import React from 'react';
 
 import {List, ListItem} from 'material-ui/List';
-import ActionGrade from 'material-ui/svg-icons/action/grade';
 import ContentInbox from 'material-ui/svg-icons/content/inbox';
-import ContentDrafts from 'material-ui/svg-icons/content/drafts';
-import ContentSend from 'material-ui/svg-icons/content/send';
 import Subheader from 'material-ui/Subheader';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -261,6 +258,32 @@ MyComponents.Detail = React.createClass({
   }
 });
 
+MyComponents.List = React.createClass({
+    render(){
+        var commit = this.props.commit;
+        var fields = Object.keys(commit);
+
+        return(
+
+            <ListItem
+                primaryText={'Click to view details'}
+                initiallyOpen={false}
+                primaryTogglesNestedList={true}
+                nestedItems={[
+                    <div dangerouslySetInnerHTML={{__html: '<ul>'+
+                    fields.map(function(result) {
+                        return '<li>'+
+                            '<p style="padding:10px;word-wrap: break-word;word-break: break-all;white-space: normal;">'+
+                                '<b>'+result+':'+'</b>'+
+                            commit[result]+'</p>'+'</li>';
+                    })
+                    +'</ul>'}} />
+                ]}
+            />
+        )
+    }
+});
+
 class SolrConnectorDemo extends React.Component {
   constructor(props) {
     super(props);
@@ -303,9 +326,16 @@ class SolrConnectorDemo extends React.Component {
     if(this.props.solrConnector.response!=null){
       console.log('see',this.props.solrConnector.response.response.docs);
 
-      commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
-        return <MyComponents.Detail commit={s} key={i}/>
-      });
+      if(this.state.fetchFields.length!=0){
+          var objs = this.props.solrConnector.response.response.docs;
+          commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+              return <MyComponents.List commit={s} key={i}/>
+          });
+      }else if(this.state.fetchFields.length==0){
+          commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+              return <MyComponents.Detail commit={s} key={i}/>
+          });
+      }
 
       compareObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
         return <MyComponents.Compare commit={s} key={i}/>
@@ -339,14 +369,14 @@ class SolrConnectorDemo extends React.Component {
         </div>
         <div className="col s12 m12 l12">
         <p>
-          filter: {" "}
+          filter(fq): {" "}
           <input type="text" value={this.state.filter}
             onChange={e => {this.setState({ filter: e.target.value })}} />
         </p>
         </div>
         <div className="col s12 m12 l12">
         <p>
-          fetchFields: {" "}
+          fetchFields(fl): {" "}
           <input type="text" value={this.state.fetchFields}
             onChange={e => {this.setState({ fetchFields: e.target.value })}} />
         </p>
