@@ -1,12 +1,15 @@
 import React from 'react';
-
+/*Material UI for collapsible list*/
 import {List, ListItem} from 'material-ui/List';
 import ContentInbox from 'material-ui/svg-icons/content/inbox';
 import Subheader from 'material-ui/Subheader';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
+/*Material UI for Tab*/
 import {Tabs, Tab} from 'material-ui/Tabs';
+/*Material UI for auto complete*/
+import AutoComplete from 'material-ui/AutoComplete';
+import MenuItem from 'material-ui/MenuItem';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -316,6 +319,18 @@ class SolrConnectorDemo extends React.Component {
     this.props.doSearch(searchParams);
   }
 
+  handleUpdateInput(value) {
+      this.setState({
+          fetchFields: value,
+      });
+  };
+
+  handleNewRequest(value) {
+      this.setState({
+          fetchFields: value.text,
+      });
+  }
+
   getChildContext() {
     return { muiTheme: getMuiTheme(baseTheme) };
   }
@@ -324,8 +339,11 @@ class SolrConnectorDemo extends React.Component {
 
     var commitObjs;
     var compareObjs;
+    var allFields=[];
     if(this.props.solrConnector.response!=null){
       console.log('see',this.props.solrConnector.response.response.docs);
+
+      var fieldsArray = Object.keys(this.props.solrConnector.response.response.docs[0]);
 
       if(this.state.fetchFields.length!=0){
           var objs = this.props.solrConnector.response.response.docs;
@@ -340,6 +358,18 @@ class SolrConnectorDemo extends React.Component {
 
       compareObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
         return <MyComponents.Compare commit={s} key={i}/>
+      });
+
+      fieldsArray.map(function(s,i){
+          allFields.push({
+              text: s,
+              value:(
+                  <MenuItem
+                    primaryText={s}
+                    secondaryText="&#9786;"
+                  />
+              )
+          })
       });
 
     }else{
@@ -376,12 +406,23 @@ class SolrConnectorDemo extends React.Component {
         </p>
         </div>
         <div className="col s12 m12 l12">
-        <p>
-          fetchFields(fl): {" "}
-          <input type="text" value={this.state.fetchFields}
-            onChange={e => {this.setState({ fetchFields: e.target.value })}} />
-        </p>
+           <p>
+             fetchFields(fl): {" "}
+             <input type="text" value={this.state.fetchFields}
+              onChange={e => {this.setState({ fetchFields: e.target.value })}} />
+           </p>
         </div>
+
+        <div className="col s12 m12 l12">
+            <AutoComplete
+                hintText="Filter by Props"
+                filter={AutoComplete.noFilter}
+                dataSource={allFields}
+                onUpdateInput={this.handleUpdateInput.bind(this)}
+                onNewRequest={this.handleNewRequest.bind(this)}
+            /><br />
+        </div>
+
         <div className="col s12 m12 l12">
             Number of Rows Displayed(start, rows): {" "}
             <div className="col s12 m6 l6">
@@ -393,6 +434,7 @@ class SolrConnectorDemo extends React.Component {
                    onChange={e => {this.setState({ rows: e.target.value })}} placeholder="rows(10)"/>
                 </div>
         </div>
+
         <p>
           <button className="waves-effect waves-light btn deep-purple darken-3" type="submit">Search</button>
         </p>
