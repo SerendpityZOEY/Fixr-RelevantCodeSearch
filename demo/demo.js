@@ -340,9 +340,11 @@ class SolrConnectorDemo extends React.Component {
     var commitObjs;
     var compareObjs;
     var allFields=[];
+    var numFound=0;
     if(this.props.solrConnector.response!=null){
       console.log('see',this.props.solrConnector.response.response.docs);
 
+      numFound = this.props.solrConnector.response.response.numFound;
       var fieldsArray = Object.keys(this.props.solrConnector.response.response.docs[0]);
 
       if(this.state.fetchFields.length!=0){
@@ -447,7 +449,7 @@ class SolrConnectorDemo extends React.Component {
         <Tabs>
           <Tab label="Commit Objects" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
           <List id="list">
-            <Subheader>Commit Objects</Subheader>
+            <Subheader>{numFound} results fetched.</Subheader>
             {commitObjs}
           </List>
           </Tab>

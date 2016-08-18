@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -50,14 +48,14 @@
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="410" column="13" selection-start-line="410" selection-start-column="13" selection-end-line="410" selection-end-column="13" />
+            <state relative-caret-position="267">
+              <caret line="346" column="6" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
               <folding>
                 <element signature="e#64#112#0" expanded="true" />
                 <element signature="e#454#506#0" expanded="true" />
                 <element signature="e#829#2046#0" expanded="false" />
                 <element signature="e#2114#8310#0" expanded="false" />
-                <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+                <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
               </folding>
             </state>
           </provider>
@@ -890,12 +888,12 @@
       <workItem from="1470984776877" duration="623000" />
       <workItem from="1471327532414" duration="2306000" />
       <workItem from="1471366703509" duration="14854000" />
-      <workItem from="1471415092266" duration="21604000" />
+      <workItem from="1471415092266" duration="22137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58067000" />
+    <option name="totallyTimeSpent" value="58600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-18" y="23" width="1280" height="709" extended-state="0" />
@@ -974,7 +972,7 @@
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1009,7 +1007,7 @@
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1031,7 +1029,7 @@
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1064,7 +1062,7 @@
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1097,7 +1095,7 @@
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1149,6 +1147,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,14 +1246,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="410" column="13" selection-start-line="410" selection-start-column="13" selection-end-line="410" selection-end-column="13" />
+        <state relative-caret-position="267">
+          <caret line="346" column="6" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471480883000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
