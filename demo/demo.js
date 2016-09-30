@@ -287,6 +287,89 @@ MyComponents.List = React.createClass({
     }
 });
 
+MyComponents.Added = React.createClass({
+    render(){
+        var commit = this.props.commit;
+        var field = this.props.data.split(':')[0]
+        var query = this.props.data.split(':')[1]
+        //console.log(commit[field].toString());
+        var importAdded = commit[field].toString();
+
+        var importRemoved = commit[field.replace("added","removed")].toString();
+        var linesAdded=null;
+        var linesRemoved=null;
+        var version=commit._version_;
+        var action;
+        //TODO: Simplify Code
+        if(importAdded.includes(query) && !importRemoved.includes(query)){
+            linesAdded = commit[field];
+            action = "ADD";
+            return(
+                <div>
+                    <Subheader>{action}</Subheader>
+                    <ListItem
+                        primaryText={version}
+                        initiallyOpen={false}
+                        primaryTogglesNestedList={true}
+                        nestedItems={[
+                            <ListItem
+                                key={0}
+                                primaryText={field + " : " + linesAdded}
+                            />,
+                        ]}
+                    />
+                </div>
+            )
+        }else if(!importAdded.includes(query) && importRemoved.includes(query)){
+            linesRemoved = commit[field.replace("added","removed")];
+            action = "REMOVE";
+            return(
+                <div>
+                    <Subheader>{action}</Subheader>
+                    <ListItem
+                        primaryText={version}
+                        initiallyOpen={false}
+                        primaryTogglesNestedList={true}
+                        nestedItems={[
+                            <ListItem
+                                key={0}
+                                primaryText={field.replace("added","removed") +" : " + linesRemoved}
+                            />,
+                        ]}
+                    />
+                </div>
+            )
+        }else if(importAdded.includes(query) && importRemoved.includes(query)){
+            linesAdded = commit[field];
+            linesRemoved = commit[field.replace("added","removed")];
+            return(
+                <div>
+                    <Subheader>{action}</Subheader>
+                    <ListItem
+                        primaryText={version}
+                        initiallyOpen={false}
+                        primaryTogglesNestedList={true}
+                        nestedItems={[
+                            <ListItem
+                                key={0}
+                                primaryText={field + " : " + linesAdded}
+                            />,
+                            <ListItem
+                                key={1}
+                                primaryText={field.replace("added","removed") +" : " + linesRemoved}
+                            />,
+                        ]}
+                    />
+                </div>
+            )
+        }
+        else{
+            return null;
+        }
+
+    }
+});
+
 class SolrConnectorDemo extends React.Component {
   constructor(props) {
     super(props);
@@ -317,6 +400,7 @@ class SolrConnectorDemo extends React.Component {
       }
     };
     this.props.doSearch(searchParams);
+      this.Classify();
   }
 
   handleUpdateInput(value) {
@@ -335,26 +419,44 @@ class SolrConnectorDemo extends React.Component {
     return { muiTheme: getMuiTheme(baseTheme) };
   }
 
+  //Test Classify
+  Classify(){
+      console.log("Test")
+      //console.log(this.state.query)
+  }
+
   render() {
 
     var commitObjs;
     var compareObjs;
     var allFields=[];
     var numFound=0;
+
+    var tmpCommitObjs;
+
     if(this.props.solrConnector.response!=null){
       console.log('see',this.props.solrConnector.response.response.docs);
 
       numFound = this.props.solrConnector.response.response.numFound;
       var fieldsArray = Object.keys(this.props.solrConnector.response.response.docs[0]);
 
+      //state.fetchFields is for fl parameters
       if(this.state.fetchFields.length!=0){
-          var objs = this.props.solrConnector.response.response.docs;
+          //var objs = this.props.solrConnector.response.response.docs;
           commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
               return <MyComponents.List commit={s} key={i}/>
           });
+
+
+
       }else if(this.state.fetchFields.length==0){
           commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
               return <MyComponents.Detail commit={s} key={i}/>
+          });
+
+          var query = this.state.query;
+          tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+              return <MyComponents.Added commit={s} data={query} key={i}/>
           });
       }
 
@@ -377,6 +479,7 @@ class SolrConnectorDemo extends React.Component {
     }else{
       commitObjs = 'null';
       compareObjs = 'null';
+      tmpCommitObjs = 'null';
     }
 
     return <div className="row">
@@ -452,6 +555,11 @@ class SolrConnectorDemo extends React.Component {
             <Subheader>{numFound} results fetched.</Subheader>
             {commitObjs}
           </List>
+
+          <div>
+              {tmpCommitObjs}
+          </div>
+
           </Tab>
 
           <Tab label="Compare" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
@@ -463,6 +571,7 @@ class SolrConnectorDemo extends React.Component {
 
           </Tabs>
       </div>
+
       </div>;
   }
 }

@@ -2,7 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/stats.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/stats.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/CommonsChunkPlugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Recharts.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/browser.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMDebugTool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMInstrumentation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMNullInputValuePropDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMUnknownPropertyDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactHostOperationHistoryDevtool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactInvalidSetStateWarningDevTool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/react/lib/createHierarchyRenderer.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/app.js" afterPath="$PROJECT_DIR$/demo/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/index.html" afterPath="$PROJECT_DIR$/demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/navbar.js" afterPath="$PROJECT_DIR$/demo/navbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.min.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react-with-addons.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/dist/react.min.js" afterPath="$PROJECT_DIR$/node_modules/react/dist/react.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/BeforeInputEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/BeforeInputEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ChangeEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ChangeEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/DOMPropertyOperations.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/DOMPropertyOperations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/EventPluginHub.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/EventPluginHub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/HTMLDOMPropertyConfig.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/HTMLDOMPropertyConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/LinkedValueUtils.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/LinkedValueUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/NativeMethodsMixin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/NativeMethodsMixin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/React.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/React.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactBrowserEventEmitter.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactBrowserEventEmitter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactChildReconciler.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactChildReconciler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactClass.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactClass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentBrowserEnvironment.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentBrowserEnvironment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentEnvironment.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentEnvironment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeDevtool.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeDevtool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeTestUtils.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactComponentTreeTestUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactCompositeComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactCompositeComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOM.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOM.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponentTree.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMComponentTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMEmptyComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMEmptyComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFactories.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFactories.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFiber.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMFiber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMInput.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMInput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMSelect.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMSelect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMTextComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDOMTextComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactDebugTool.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactDebugTool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactElement.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactElement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactElementValidator.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactElementValidator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactMount.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactMount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactMultiChild.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactMultiChild.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeBaseComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeBaseComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeComponentEnvironment.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeComponentEnvironment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeMount.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeMount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeReconcileTransaction.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeReconcileTransaction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeTextComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactNativeTextComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactPropTypes.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactPropTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactReconciler.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactReconciler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactRef.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactRef.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactServerRendering.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactServerRendering.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactSimpleEmptyComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactSimpleEmptyComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactTestMount.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactTestMount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactTestReconcileTransaction.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactTestReconcileTransaction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactTestRenderer.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactTestRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactTestUtils.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactTestUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactUpdateQueue.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactUpdateQueue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ReactVersion.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ReactVersion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/ResponderEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/ResponderEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/SVGDOMPropertyConfig.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/SVGDOMPropertyConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/SelectEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/SelectEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/SimpleEventPlugin.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/SimpleEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/SyntheticEvent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/SyntheticEvent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/checkReactTypeSpec.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/checkReactTypeSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/createReactNativeComponentClass.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/createReactNativeComponentClass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/escapeTextContentForBrowser.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/escapeTextContentForBrowser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/flattenChildren.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/flattenChildren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/instantiateReactComponent.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/instantiateReactComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/onlyChild.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/onlyChild.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/setInnerHTML.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/setInnerHTML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/traverseAllChildren.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/traverseAllChildren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/lib/validateDOMNesting.js" afterPath="$PROJECT_DIR$/node_modules/react/lib/validateDOMNesting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react/package.json" afterPath="$PROJECT_DIR$/node_modules/react/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,63 +106,19 @@
     <favorites_list name="TestSolrv2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="346" column="6" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
+            <state relative-caret-position="617">
+              <caret line="359" column="31" selection-start-line="359" selection-start-column="31" selection-end-line="359" selection-end-column="31" />
               <folding>
-                <element signature="e#64#112#0" expanded="true" />
                 <element signature="e#454#506#0" expanded="true" />
                 <element signature="e#829#2046#0" expanded="false" />
+                <element signature="e#2090#8312#0" expanded="false" />
                 <element signature="e#2114#8310#0" expanded="false" />
-                <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
+                <marker date="1475274927000" expanded="true" signature="8858:8935" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="60" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="react-solr-connector.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/react-solr-connector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,6 +129,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -113,17 +154,27 @@
         <option value="$PROJECT_DIR$/demo/js/app.jsx" />
         <option value="$PROJECT_DIR$/demo/data.jsx" />
         <option value="$PROJECT_DIR$/demo/js/navbar.js" />
-        <option value="$PROJECT_DIR$/demo/navbar.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/demo/list.js" />
         <option value="$PROJECT_DIR$/demo/test.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/demo/styles.css" />
         <option value="$PROJECT_DIR$/demo/autocomplete.js" />
+        <option value="$PROJECT_DIR$/lib/Recharts.js" />
+        <option value="$PROJECT_DIR$/lib/browser.js" />
+        <option value="$PROJECT_DIR$/lib/Recharts.min.js" />
+        <option value="$PROJECT_DIR$/demo/statCharts.js" />
+        <option value="$PROJECT_DIR$/lib/recharts.js" />
         <option value="$PROJECT_DIR$/demo/app.js" />
+        <option value="$PROJECT_DIR$/demo/Chart.js" />
+        <option value="$PROJECT_DIR$/demo/navbar.js" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
+        <option value="$PROJECT_DIR$/demo/stats.html" />
+        <option value="$PROJECT_DIR$/demo/diff.js" />
+        <option value="$PROJECT_DIR$/demo/stats.js" />
+        <option value="$PROJECT_DIR$/lib/CommonsChunkPlugin.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/demo/demo.js" />
       </list>
     </option>
@@ -139,10 +190,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
+    <option name="x" value="726" />
+    <option name="y" value="166" />
+    <option name="width" value="1519" />
+    <option name="height" value="1074" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,8 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -199,7 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,12 +262,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
+              <option name="myItemId" value="__tests__" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -226,22 +277,24 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apollobit-medialistener-dashboard/README.md" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LeetCodeHigh" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="editor.config.accepted" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/demo/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo" />
       <recent name="$PROJECT_DIR$/lib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/demo/js" />
     </key>
   </component>
   <component name="RunManager">
@@ -276,7 +329,10 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -299,7 +355,10 @@
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
-      <method />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -719,6 +778,19 @@
       <module name="TestSolrv2" />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -888,15 +960,25 @@
       <workItem from="1470984776877" duration="623000" />
       <workItem from="1471327532414" duration="2306000" />
       <workItem from="1471366703509" duration="14854000" />
-      <workItem from="1471415092266" duration="22137000" />
+      <workItem from="1471415092266" duration="22730000" />
+      <workItem from="1471509643230" duration="869000" />
+      <workItem from="1472676871448" duration="537000" />
+      <workItem from="1473801653092" duration="383000" />
+      <workItem from="1474863629806" duration="13924000" />
+      <workItem from="1474914352747" duration="458000" />
+      <workItem from="1474915516665" duration="20264000" />
+      <workItem from="1474990322023" duration="2650000" />
+      <workItem from="1475085699714" duration="1278000" />
+      <workItem from="1475164662121" duration="8732000" />
+      <workItem from="1475265701351" duration="3638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58600000" />
+    <option name="totallyTimeSpent" value="111926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-18" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="726" y="166" width="1519" height="1074" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -910,7 +992,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2625" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15734036" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -922,7 +1004,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -938,322 +1020,35 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
+    <entry file="file://$PROJECT_DIR$/demo/stats.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/react-solr-connector.js" />
-    <entry file="file://$PROJECT_DIR$/demo/data.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#64#112#0" expanded="true" />
-            <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#829#2046#0" expanded="false" />
-            <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/book/src/apps/uber/client/components/RestList.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/react-solr-connector.js" />
-    <entry file="file://$PROJECT_DIR$/demo/data.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#64#112#0" expanded="true" />
-            <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#829#2046#0" expanded="false" />
-            <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="495">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="71" selection-start-line="46" selection-start-column="71" selection-end-line="46" selection-end-column="71" />
+        <state relative-caret-position="617">
+          <caret line="359" column="31" selection-start-line="359" selection-start-column="31" selection-end-line="359" selection-end-column="31" />
           <folding>
-            <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
+            <element signature="e#2090#8312#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/react-solr-connector.js" />
-    <entry file="file://$PROJECT_DIR$/demo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="71" selection-start-line="46" selection-start-column="71" selection-end-line="46" selection-end-column="71" />
-          <folding>
-            <element signature="e#64#112#0" expanded="true" />
-            <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#829#2046#0" expanded="false" />
-            <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/react-solr-connector.js" />
-    <entry file="file://$PROJECT_DIR$/demo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#64#112#0" expanded="true" />
-            <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#829#2046#0" expanded="false" />
-            <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/react-solr-connector.js" />
-    <entry file="file://$PROJECT_DIR$/demo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__tests__/react-solr-connector-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/book/src/apps/uber/client/data.jsx" />
-    <entry file="file://$USER_HOME$/book/src/apps/uber/client/components/app.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/js/demo.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/js/react-solr-connector.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/js/app.jsx" />
-    <entry file="file://$USER_HOME$/book/src/apps/together/components/chatroom.jsx" />
-    <entry file="file://$USER_HOME$/book/src/apps/uber/client/components/RestList.jsx" />
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/data.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/js/NavBar.jsx" />
-    <entry file="file://$PROJECT_DIR$/demo/react-solr-connector.js" />
-    <entry file="file://$PROJECT_DIR$/lib/material-ui/Card/Card.js" />
-    <entry file="file://$PROJECT_DIR$/demo/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/test.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../apollobit-medialistener-dashboard/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/react-solr-connector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="60" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/autocomplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="346" column="6" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
-          <folding>
-            <element signature="e#64#112#0" expanded="true" />
-            <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#829#2046#0" expanded="false" />
-            <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1471482503000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1475274927000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
