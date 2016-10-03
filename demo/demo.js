@@ -290,7 +290,11 @@ MyComponents.List = React.createClass({
 MyComponents.Added = React.createClass({
     render(){
         var commit = this.props.commit;
+        //TODO
         var field = this.props.data.split(':')[0]
+        if(!field.includes("added") && !field.includes("removed")){
+            field = 'c_imports_added_t';
+        }
         var query = this.props.data.split(':')[1]
         //console.log(commit[field].toString());
         var importAdded = commit[field].toString();
@@ -385,9 +389,22 @@ class SolrConnectorDemo extends React.Component {
 
   onSubmit(event) {
     event.preventDefault();
+    //Parse query
+    var initialQuery = this.state.query;
+          var values = initialQuery.split(':');
+          var field = values[0];
+          var imports = values[1];
+          var af=null, rf = null;
+          if(field === 'imports'){
+              af = 'c_imports_added_t';
+              rf = 'c_imports_removed_t';
+              initialQuery = af+':'+imports+' OR '+rf+':'+imports;
+              console.log(initialQuery)
+          }
+
     let searchParams = {
       solrSearchUrl: this.state.solrSearchUrl,
-      query: this.state.query,
+      query: initialQuery,
       filter: [this.state.filter],
       fetchFields: this.state.fetchFields.split(" "),
       offset: this.state.offset,
@@ -483,6 +500,8 @@ class SolrConnectorDemo extends React.Component {
       compareObjs = 'null';
       tmpCommitObjs = 'null';
     }
+
+    console.log(tmpCommitObjs)
 
     return <div className="row">
       <div className="col s12 m5 l5">
