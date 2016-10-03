@@ -454,10 +454,12 @@ class SolrConnectorDemo extends React.Component {
               return <MyComponents.Detail commit={s} key={i}/>
           });
 
-          var query = this.state.query;
-          tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
-              return <MyComponents.Added commit={s} data={query} key={i}/>
-          });
+          if(this.state.query != '*:*'){
+              var query = this.state.query;
+              tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+                  return <MyComponents.Added commit={s} data={query} key={i}/>
+              });
+          }
       }
 
       compareObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
