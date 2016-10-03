@@ -307,6 +307,7 @@ MyComponents.Added = React.createClass({
         //TODO: Simplify Code
         if(importAdded.includes(query) && !importRemoved.includes(query)){
             linesAdded = commit[field];
+            linesRemoved = commit[field.replace("added","removed")];
             action = "ADD";
             return(
                 <div>
@@ -319,6 +320,10 @@ MyComponents.Added = React.createClass({
                             <ListItem
                                 key={0}
                                 primaryText={field + " : " + linesAdded}
+                            />,
+                            <ListItem
+                                key={1}
+                                primaryText={field.replace("added","removed") +" : " + linesRemoved}
                             />,
                         ]}
                     />
