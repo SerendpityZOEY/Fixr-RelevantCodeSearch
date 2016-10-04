@@ -291,12 +291,11 @@ MyComponents.Added = React.createClass({
     render(){
         var commit = this.props.commit;
         //TODO
-        var field = this.props.data.split(':')[0]
+        var field = this.props.queryType;
         if(!field.includes("added") && !field.includes("removed")){
             field = 'c_imports_added_t';
         }
-        var query = this.props.data.split(':')[1]
-        //console.log(commit[field].toString());
+        var query = this.props.data
         var importAdded = commit[field].toString();
 
         var importRemoved = commit[field.replace("added","removed")].toString();
@@ -304,6 +303,9 @@ MyComponents.Added = React.createClass({
         var linesRemoved=null;
         var version=commit._version_;
         var action;
+        //console.log('added',importAdded, importAdded.includes(query));
+        //console.log('removed',importRemoved, importRemoved.includes(query));
+        //console.log('query',query);
         //TODO: Simplify Code
         if(importAdded.includes(query) && !importRemoved.includes(query)){
             linesAdded = commit[field];
@@ -324,6 +326,10 @@ MyComponents.Added = React.createClass({
                             <ListItem
                                 key={1}
                                 primaryText={field.replace("added","removed") +" : " + linesRemoved}
+                            />,
+                            <ListItem
+                                key={2}
+                                primaryText={"Methods : " + commit.c_methods_t}
                             />,
                         ]}
                     />
@@ -388,7 +394,11 @@ class SolrConnectorDemo extends React.Component {
       filter: "",
       fetchFields: "",
       offset:0,
-      rows: 10
+      rows: 10,
+      queryType:"",
+      queryCallsites:"",
+      callsite:"",
+      queryMethods:""
     }
   }
 
@@ -396,21 +406,32 @@ class SolrConnectorDemo extends React.Component {
     event.preventDefault();
     //Parse query
     var initialQuery = this.state.query;
-          var values = initialQuery.split(':');
-          var field = values[0];
-          var imports = values[1];
-          var af=null, rf = null;
-          if(field === 'imports'){
-              af = 'c_imports_added_t';
-              rf = 'c_imports_removed_t';
-              initialQuery = af+':'+imports+' OR '+rf+':'+imports;
-              console.log(initialQuery)
-          }
 
+    var field = this.state.queryType;
+    var imports = this.state.query;
+    var af=null, rf = null;
+    if(field === 'imports'){
+        af = 'c_imports_added_t';
+        rf = 'c_imports_removed_t';
+        initialQuery = af+':'+imports+' OR '+rf+':'+imports;
+        //console.log(initialQuery)
+    }
+    //console.log('filter:',this.state.filter);
+    var initialFilter="";
+    if(this.state.queryMethods === 'methods'){
+        initialFilter = 'c_methods_t:'+this.state.filter;
+    }
+    if(this.state.queryCallsites === 'callsites' && initialFilter === ""){
+        initialFilter = 'c_callsites_t:'+this.state.callsite;
+    }
+    else if(this.state.queryCallsites === 'callsites' && initialFilter != ""){
+        initialFilter += ' OR c_callsites_t:'+this.state.callsite;
+    }
+    console.log('filter:',initialFilter)
     let searchParams = {
       solrSearchUrl: this.state.solrSearchUrl,
       query: initialQuery,
-      filter: [this.state.filter],
+      filter: [initialFilter],
       fetchFields: this.state.fetchFields.split(" "),
       offset: this.state.offset,
       limit: this.state.rows,
@@ -478,8 +499,9 @@ class SolrConnectorDemo extends React.Component {
 
           if(this.state.query != '*:*'){
               var query = this.state.query;
+              var Type = this.state.queryType;
               tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
-                  return <MyComponents.Added commit={s} data={query} key={i}/>
+                  return <MyComponents.Added commit={s} data={query} key={i} queryType={Type}/>
               });
           }
       }
@@ -506,8 +528,6 @@ class SolrConnectorDemo extends React.Component {
       tmpCommitObjs = 'null';
     }
 
-    console.log(tmpCommitObjs)
-
     return <div className="row">
       <div className="col s12 m5 l5">
       <div className="row">
@@ -522,16 +542,35 @@ class SolrConnectorDemo extends React.Component {
         </p>
         </div>
         <div className="col s12 m12 l12">
-        <p>
-          query: {" "}
+            <p>
+                <input className="with-gap" name="group3" type="checkbox" id="imports" value="imports"
+                       onChange={e => {this.setState({ queryType: 'imports' })}}/>
+                <label htmlFor="imports">Imports</label>
+                &nbsp;&nbsp;
+                <input className="with-gap" name="group3" type="checkbox" id="callsites" value="callsites"
+                       onChange={e => {this.setState({ queryCallsites: 'callsites' })}}/>
+                <label htmlFor="callsites">Callsites</label>
+                &nbsp;&nbsp;
+                <input className="with-gap" name="group3" type="checkbox" id="methods" value="methods"
+                       onChange={e => {this.setState({ queryMethods: 'methods' })}}/>
+                <label htmlFor="methods">Methods</label>
+            </p>
+          <p>
+          import statement(query): {" "}
           <input type="text" value={this.state.query}
             onChange={e => {this.setState({ query: e.target.value })}} />
           {" "}
           </p>
+          <p>
+            callsites(fq): {" "}
+            <input type="text" value={this.state.callsite}
+              onChange={e => {this.setState({ callsite: e.target.value })}} />
+            {" "}
+          </p>
         </div>
         <div className="col s12 m12 l12">
         <p>
-          filter(fq): {" "}
+          method(fq): {" "}
           <input type="text" value={this.state.filter}
             onChange={e => {this.setState({ filter: e.target.value })}} />
         </p>

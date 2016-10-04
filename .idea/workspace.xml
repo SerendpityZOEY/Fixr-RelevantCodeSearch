@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -26,14 +27,14 @@
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="309" column="68" selection-start-line="309" selection-start-column="68" selection-end-line="309" selection-end-column="68" />
+            <state relative-caret-position="-1815">
+              <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
               <folding>
                 <element signature="e#454#506#0" expanded="true" />
                 <element signature="e#829#2046#0" expanded="false" />
                 <element signature="e#2090#8312#0" expanded="false" />
                 <element signature="e#2114#8310#0" expanded="false" />
-                <marker date="1475487687000" expanded="true" signature="8858:8935" ph="..." />
+                <marker date="1475570914000" expanded="true" signature="8858:8935" ph="..." />
               </folding>
             </state>
           </provider>
@@ -135,6 +136,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,9 +187,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -886,22 +887,25 @@
       <workItem from="1475085699714" duration="1278000" />
       <workItem from="1475164662121" duration="8732000" />
       <workItem from="1475265701351" duration="3638000" />
-      <workItem from="1475485556424" duration="2057000" />
+      <workItem from="1475485556424" duration="2159000" />
+      <workItem from="1475511808048" duration="2240000" />
+      <workItem from="1475514115172" duration="2076000" />
+      <workItem from="1475566970996" duration="3757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113983000" />
+    <option name="totallyTimeSpent" value="122158000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1140625" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.065625" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -943,6 +947,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="309" column="74" selection-start-line="309" selection-start-column="74" selection-end-line="309" selection-end-column="74" />
+          <folding>
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#829#2046#0" expanded="false" />
+            <element signature="e#2090#8312#0" expanded="false" />
+            <element signature="e#2114#8310#0" expanded="false" />
+            <marker date="1475570914000" expanded="true" signature="8858:8935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -950,7 +968,35 @@
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2090#8312#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1475487687000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1475570914000" expanded="true" signature="8858:8935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#829#2046#0" expanded="false" />
+            <element signature="e#2090#8312#0" expanded="false" />
+            <element signature="e#2114#8310#0" expanded="false" />
+            <marker date="1475570914000" expanded="true" signature="8858:8935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#829#2046#0" expanded="false" />
+            <element signature="e#2090#8312#0" expanded="false" />
+            <element signature="e#2114#8310#0" expanded="false" />
+            <marker date="1475570914000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
@@ -971,14 +1017,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="309" column="68" selection-start-line="309" selection-start-column="68" selection-end-line="309" selection-end-column="68" />
+        <state relative-caret-position="-1815">
+          <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
           <folding>
             <element signature="e#454#506#0" expanded="true" />
             <element signature="e#829#2046#0" expanded="false" />
             <element signature="e#2090#8312#0" expanded="false" />
             <element signature="e#2114#8310#0" expanded="false" />
-            <marker date="1475487687000" expanded="true" signature="8858:8935" ph="..." />
+            <marker date="1475570914000" expanded="true" signature="8858:8935" ph="..." />
           </folding>
         </state>
       </provider>
