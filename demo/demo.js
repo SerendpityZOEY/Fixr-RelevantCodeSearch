@@ -23,6 +23,12 @@ const styles = {
   },
   table:{
     fontSize:12
+  },
+  listItemAdded:{
+    backgroundColor:'#c8e6c9'
+  },
+  listItemRemoved:{
+    backgroundColor:'#ffccbc'
   }
 };
 
@@ -290,22 +296,28 @@ MyComponents.List = React.createClass({
 MyComponents.Added = React.createClass({
     render(){
         var commit = this.props.commit;
-        //TODO
-        var field = this.props.queryType;
+
+        var field = this.props.queryType; //field is 'imports'
+        //TODO: later field can be callsites
         if(!field.includes("added") && !field.includes("removed")){
             field = 'c_imports_added_t';
         }
-        var query = this.props.data
+        var query = this.props.data; //query is import statement
         var importAdded = commit[field].toString();
 
         var importRemoved = commit[field.replace("added","removed")].toString();
         var linesAdded=null;
         var linesRemoved=null;
-        var version=commit._version_;
+        var repo=commit.repo_sni;
         var action;
-        //console.log('added',importAdded, importAdded.includes(query));
-        //console.log('removed',importRemoved, importRemoved.includes(query));
-        //console.log('query',query);
+        //TODO: Parse the rest imports
+        var rest = commit["c_imports_t"].toString().split(" ");
+        console.log('------------')
+        var restCommits=rest[0];
+        for(var i=1;i<rest.length;i++){
+            restCommits += rest[i]+'\n';
+        }
+        console.log(restCommits);
         //TODO: Simplify Code
         if(importAdded.includes(query) && !importRemoved.includes(query)){
             linesAdded = commit[field];
@@ -315,20 +327,28 @@ MyComponents.Added = React.createClass({
                 <div>
                     <Subheader>{action}</Subheader>
                     <ListItem
-                        primaryText={version}
+                        primaryText={repo}
                         initiallyOpen={false}
                         primaryTogglesNestedList={true}
                         nestedItems={[
                             <ListItem
                                 key={0}
-                                primaryText={field + " : " + linesAdded}
+                                primaryText={ " + " + linesAdded}
+                                style={styles.listItemAdded}
                             />,
                             <ListItem
                                 key={1}
-                                primaryText={field.replace("added","removed") +" : " + linesRemoved}
+                                primaryText={ " - " + linesRemoved}
+                                style={styles.listItemRemoved}
                             />,
                             <ListItem
                                 key={2}
+                                primaryText={restCommits.split("\n").map(i => {
+                                    return <div>{i}</div>;
+                                })}
+                            />,
+                            <ListItem
+                                key={3}
                                 primaryText={"Methods : " + commit.c_methods_t}
                             />,
                         ]}
