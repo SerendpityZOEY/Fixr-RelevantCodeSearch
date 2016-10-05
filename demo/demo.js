@@ -311,10 +311,11 @@ MyComponents.Added = React.createClass({
         var repo=commit.repo_sni;
         var action;
         //TODO: Parse the rest imports
-        var rest = commit["c_imports_t"].toString().split(" ");
-        console.log('------------')
+        var rest = commit["p_imports_t"].toString().split(" ");
+        console.log('------------',query)
         var restCommits=rest[0];
         for(var i=1;i<rest.length;i++){
+            //TODO: parent imports contains the added/removed line
             restCommits += rest[i]+'\n';
         }
         console.log(restCommits);
@@ -323,85 +324,49 @@ MyComponents.Added = React.createClass({
             linesAdded = commit[field];
             linesRemoved = commit[field.replace("added","removed")];
             action = "ADD";
-            return(
-                <div>
-                    <Subheader>{action}</Subheader>
-                    <ListItem
-                        primaryText={repo}
-                        initiallyOpen={false}
-                        primaryTogglesNestedList={true}
-                        nestedItems={[
-                            <ListItem
-                                key={0}
-                                primaryText={ " + " + linesAdded}
-                                style={styles.listItemAdded}
-                            />,
-                            <ListItem
-                                key={1}
-                                primaryText={ " - " + linesRemoved}
-                                style={styles.listItemRemoved}
-                            />,
-                            <ListItem
-                                key={2}
-                                primaryText={restCommits.split("\n").map(i => {
-                                    return <div>{i}</div>;
-                                })}
-                            />,
-                            <ListItem
-                                key={3}
-                                primaryText={"Methods : " + commit.c_methods_t}
-                            />,
-                        ]}
-                    />
-                </div>
-            )
         }else if(!importAdded.includes(query) && importRemoved.includes(query)){
+            linesAdded = commit[field];
             linesRemoved = commit[field.replace("added","removed")];
             action = "REMOVE";
-            return(
-                <div>
-                    <Subheader>{action}</Subheader>
-                    <ListItem
-                        primaryText={version}
-                        initiallyOpen={false}
-                        primaryTogglesNestedList={true}
-                        nestedItems={[
-                            <ListItem
-                                key={0}
-                                primaryText={field.replace("added","removed") +" : " + linesRemoved}
-                            />,
-                        ]}
-                    />
-                </div>
-            )
         }else if(importAdded.includes(query) && importRemoved.includes(query)){
             linesAdded = commit[field];
             linesRemoved = commit[field.replace("added","removed")];
-            return(
-                <div>
-                    <Subheader>{action}</Subheader>
-                    <ListItem
-                        primaryText={version}
-                        initiallyOpen={false}
-                        primaryTogglesNestedList={true}
-                        nestedItems={[
-                            <ListItem
-                                key={0}
-                                primaryText={field + " : " + linesAdded}
-                            />,
-                            <ListItem
-                                key={1}
-                                primaryText={field.replace("added","removed") +" : " + linesRemoved}
-                            />,
-                        ]}
-                    />
-                </div>
-            )
         }
         else{
             return null;
         }
-
+        return(
+            <div>
+                <Subheader>{action}</Subheader>
+                <ListItem
+                    primaryText={repo}
+                    initiallyOpen={false}
+                    primaryTogglesNestedList={true}
+                    nestedItems={[
+                        <ListItem
+                            key={0}
+                            primaryText={ " + " + linesAdded}
+                            style={styles.listItemAdded}
+                        />,
+                        <ListItem
+                            key={1}
+                            primaryText={ " - " + linesRemoved}
+                            style={styles.listItemRemoved}
+                        />,
+                        <ListItem
+                            key={2}
+                            primaryText={restCommits.split("\n").map(i => {
+                                return <div>{i}</div>;
+                            })}
+                        />,
+                        <ListItem
+                            key={3}
+                            primaryText={"Methods : " + commit.c_methods_t}
+                        />,
+                    ]}
+                />
+            </div>
+        )
     }
 });
 
