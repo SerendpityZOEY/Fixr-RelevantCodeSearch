@@ -294,6 +294,17 @@ MyComponents.List = React.createClass({
 });
 
 MyComponents.Added = React.createClass({
+
+    parseData: function(commit,field,token) {
+        var rest = commit[field].toString().split(token);
+        var restCommits=rest[0];
+        for(var i=1;i<rest.length;i++){
+            //TODO: parent imports contains the added/removed line
+            restCommits += rest[i]+'\n';
+        }
+        return restCommits;
+    },
+
     render(){
         var commit = this.props.commit;
 
@@ -311,14 +322,18 @@ MyComponents.Added = React.createClass({
         var repo=commit.repo_sni;
         var action;
         //TODO: Parse the rest imports
-        var rest = commit["p_imports_t"].toString().split(" ");
-        console.log('------------',query)
-        var restCommits=rest[0];
-        for(var i=1;i<rest.length;i++){
-            //TODO: parent imports contains the added/removed line
-            restCommits += rest[i]+'\n';
-        }
-        console.log(restCommits);
+        //var rest = commit["p_imports_t"].toString().split(" ");
+        //console.log('------------',query)
+        //var restCommits=rest[0];
+        //for(var i=1;i<rest.length;i++){
+        //    restCommits += rest[i]+'\n';
+        //}
+
+        var restCommits = this.parseData(commit,"p_imports_t"," ");
+
+        var methods = this.parseData(commit,"c_methods_t"," ");
+
+        var contents = this.parseData(commit,"c_contents_t","\n");
         //TODO: Simplify Code
         if(importAdded.includes(query) && !importRemoved.includes(query)){
             linesAdded = commit[field];
@@ -335,6 +350,7 @@ MyComponents.Added = React.createClass({
         else{
             return null;
         }
+
         return(
             <div>
                 <Subheader>{action}</Subheader>
@@ -345,23 +361,9 @@ MyComponents.Added = React.createClass({
                     nestedItems={[
                         <ListItem
                             key={0}
-                            primaryText={ " + " + linesAdded}
-                            style={styles.listItemAdded}
-                        />,
-                        <ListItem
-                            key={1}
-                            primaryText={ " - " + linesRemoved}
-                            style={styles.listItemRemoved}
-                        />,
-                        <ListItem
-                            key={2}
-                            primaryText={restCommits.split("\n").map(i => {
+                            primaryText={contents.split("\n").map(i => {
                                 return <div>{i}</div>;
                             })}
-                        />,
-                        <ListItem
-                            key={3}
-                            primaryText={"Methods : " + commit.c_methods_t}
                         />,
                     ]}
                 />
@@ -449,7 +451,7 @@ class SolrConnectorDemo extends React.Component {
 
   //Test Classify
   Classify(){
-      console.log("Test")
+      //console.log("Test")
       //console.log(this.state.query)
   }
 
