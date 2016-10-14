@@ -27,16 +27,31 @@
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+            <state relative-caret-position="-308">
+              <caret line="465" column="26" selection-start-line="465" selection-start-column="26" selection-end-line="465" selection-end-column="26" />
               <folding>
                 <element signature="e#64#112#0" expanded="true" />
                 <element signature="e#454#506#0" expanded="true" />
-                <element signature="e#937#2154#0" expanded="false" />
-                <element signature="e#2198#8420#0" expanded="false" />
-                <element signature="e#2222#8418#0" expanded="false" />
-                <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+                <element signature="e#1031#2248#0" expanded="false" />
+                <element signature="e#2316#8512#0" expanded="false" />
+                <element signature="e#2341#8501#0" expanded="false" />
+                <element signature="e#8556#9366#0" expanded="false" />
+                <element signature="e#10017#11388#0" expanded="false" />
+                <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+                <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+                <element signature="e#21360#21570#0" expanded="false" />
+                <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,12 +102,13 @@
         <option value="$PROJECT_DIR$/demo/app.js" />
         <option value="$PROJECT_DIR$/demo/Chart.js" />
         <option value="$PROJECT_DIR$/demo/navbar.js" />
-        <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/demo/stats.html" />
         <option value="$PROJECT_DIR$/demo/diff.js" />
         <option value="$PROJECT_DIR$/demo/stats.js" />
         <option value="$PROJECT_DIR$/lib/CommonsChunkPlugin.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/demo/Dropdown.js" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/demo/demo.js" />
       </list>
     </option>
@@ -108,10 +124,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1284" />
-    <option name="y" value="77" />
-    <option name="width" value="1280" />
-    <option name="height" value="1190" />
+    <option name="x" value="-6" />
+    <option name="y" value="23" />
+    <option name="width" value="1297" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -896,35 +912,38 @@
       <workItem from="1475696864125" duration="6443000" />
       <workItem from="1475781733031" duration="1473000" />
       <workItem from="1475783230035" duration="545000" />
-      <workItem from="1476220782422" duration="5506000" />
+      <workItem from="1476220782422" duration="5777000" />
+      <workItem from="1476304173330" duration="5723000" />
+      <workItem from="1476347784537" duration="2280000" />
+      <workItem from="1476470528846" duration="5056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136711000" />
+    <option name="totallyTimeSpent" value="150041000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1284" y="77" width="1280" height="1190" extended-state="0" />
+    <frame x="-6" y="23" width="1297" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03746655" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15703125" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15497302" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -958,10 +977,15 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>
@@ -973,10 +997,15 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>
@@ -988,10 +1017,75 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#64#112#0" expanded="true" />
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#64#112#0" expanded="true" />
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#64#112#0" expanded="true" />
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1003,10 +1097,15 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1018,10 +1117,15 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1033,10 +1137,15 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1048,18 +1157,16 @@
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1070,17 +1177,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/diff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2370">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474967441000" expanded="true" signature="3803:3880" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/autocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-643">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+        <state relative-caret-position="-308">
+          <caret line="465" column="26" selection-start-line="465" selection-start-column="26" selection-end-line="465" selection-end-column="26" />
           <folding>
             <element signature="e#64#112#0" expanded="true" />
             <element signature="e#454#506#0" expanded="true" />
-            <element signature="e#937#2154#0" expanded="false" />
-            <element signature="e#2198#8420#0" expanded="false" />
-            <element signature="e#2222#8418#0" expanded="false" />
-            <marker date="1476228147000" expanded="true" signature="8966:9043" ph="..." />
+            <element signature="e#1031#2248#0" expanded="false" />
+            <element signature="e#2316#8512#0" expanded="false" />
+            <element signature="e#2341#8501#0" expanded="false" />
+            <element signature="e#8556#9366#0" expanded="false" />
+            <element signature="e#10017#11388#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="e#21360#21570#0" expanded="false" />
+            <marker date="1476476404000" expanded="true" signature="9060:9137" ph="..." />
           </folding>
         </state>
       </provider>

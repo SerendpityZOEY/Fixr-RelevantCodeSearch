@@ -10,6 +10,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 /*Material UI for auto complete*/
 import AutoComplete from 'material-ui/AutoComplete';
 import MenuItem from 'material-ui/MenuItem';
+import DropDownMenu from 'material-ui/DropDownMenu';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -29,7 +30,10 @@ const styles = {
   },
   listItemRemoved:{
     backgroundColor:'#ffccbc'
-  }
+  },
+  customWidth: {
+      width: 200,
+  },
 };
 
 MyComponents.Compare = React.createClass({
@@ -308,12 +312,15 @@ MyComponents.Added = React.createClass({
     render(){
         var commit = this.props.commit;
 
-        var field = this.props.queryType; //field is 'imports'
+        var field = this.props.queryImport; //field is 'imports'
+        var repo=commit.repo_sni;
+        var contents = this.parseData(commit,"c_contents_t","\n");
         //TODO: later field can be callsites
+        /*
         if(!field.includes("added") && !field.includes("removed")){
             field = 'c_imports_added_t';
         }
-        var query = this.props.data; //query is import statement
+        var query = this.props.data; //query is a particular import statement
         var importAdded = commit[field].toString();
 
         var importRemoved = commit[field.replace("added","removed")].toString();
@@ -321,13 +328,6 @@ MyComponents.Added = React.createClass({
         var linesRemoved=null;
         var repo=commit.repo_sni;
         var action;
-        //TODO: Parse the rest imports
-        //var rest = commit["p_imports_t"].toString().split(" ");
-        //console.log('------------',query)
-        //var restCommits=rest[0];
-        //for(var i=1;i<rest.length;i++){
-        //    restCommits += rest[i]+'\n';
-        //}
 
         var restCommits = this.parseData(commit,"p_imports_t"," ");
 
@@ -350,10 +350,9 @@ MyComponents.Added = React.createClass({
         else{
             return null;
         }
-
+        */
         return(
             <div>
-                <Subheader>{action}</Subheader>
                 <ListItem
                     primaryText={repo}
                     initiallyOpen={false}
@@ -382,19 +381,29 @@ class SolrConnectorDemo extends React.Component {
       fetchFields: "",
       offset:0,
       rows: 10,
-      queryType:"",
-      queryCallsites:"",
-      callsite:"",
-      queryMethods:""
+      //newly added
+      queryImport:"", //value get from checkbox
+      importEntered:"",
+
+      queryCallsites:"", //value get from checkbox
+      callsite:"", //input of callsites
+
+      queryMethods:"", //value get from checkbox
+      callsiteAction: "all"
     }
   }
 
   onSubmit(event) {
     event.preventDefault();
-    //Parse query
+    /*
+    ======================================================
+    Parse query
+    ======================================================
+    */
+    /*
     var initialQuery = this.state.query;
 
-    var field = this.state.queryType;
+    var field = this.state.queryImport;
     var imports = this.state.query;
     var af=null, rf = null;
     if(field === 'imports'){
@@ -404,21 +413,49 @@ class SolrConnectorDemo extends React.Component {
         //console.log(initialQuery)
     }
     //console.log('filter:',this.state.filter);
-    var initialFilter="";
+    */
+    //TODO: Rephrase the query filter
+    var initialFilter=[];
+    if(this.state.queryImport === 'imports'){
+        var importFl = 'c_imports_added_t:'+this.state.importEntered;
+        importFl += ' OR c_imports_removed_t:'+this.state.importEntered;
+        importFl += ' OR c_imports_t:'+this.state.importEntered;
+        initialFilter.push(importFl);
+    }
     if(this.state.queryMethods === 'methods'){
-        initialFilter = 'c_methods_t:'+this.state.filter;
+        switch(initialFilter){
+            case null:
+                initialFilter = 'c_methods_t:'+this.state.filter;
+                break;
+            default:
+                initialFilter += ' AND c_methods_t:'+this.state.filter;
+        }
     }
-    if(this.state.queryCallsites === 'callsites' && initialFilter === ""){
-        initialFilter = 'c_callsites_t:'+this.state.callsite;
+    if(this.state.queryCallsites === 'callsites'){
+        switch(this.state.callsiteAction){
+            case 'added':
+                var callsiteFl = 'c_callsites_added_t:'+this.state.callsite;
+                break;
+            case 'removed':
+                callsiteFl = 'c_callsites_removed_t:'+this.state.callsite;
+                break;
+            case 'modified':
+                callsiteFl = 'c_callsites_added_t:'+this.state.callsite;
+                callsiteFl += ' OR c_callsites_removed_t:'+this.state.callsite;
+                break;
+            default:
+                callsiteFl = 'c_callsites_t:'+this.state.callsite;
+                callsiteFl += ' OR c_callsites_added_t:'+this.state.callsite;
+                callsiteFl += ' OR c_callsites_removed_t:'+this.state.callsite;
+        }
+        if(initialFilter==null) initialFilter = callsiteFl;
+        else initialFilter.push(callsiteFl);
     }
-    else if(this.state.queryCallsites === 'callsites' && initialFilter != ""){
-        initialFilter += ' OR c_callsites_t:'+this.state.callsite;
-    }
-    console.log('filter:',initialFilter)
+    console.log('filter:',initialFilter);
     let searchParams = {
       solrSearchUrl: this.state.solrSearchUrl,
-      query: initialQuery,
-      filter: [initialFilter],
+      query: this.state.query,
+      filter: initialFilter,
       fetchFields: this.state.fetchFields.split(" "),
       offset: this.state.offset,
       limit: this.state.rows,
@@ -430,7 +467,6 @@ class SolrConnectorDemo extends React.Component {
       }
     };
     this.props.doSearch(searchParams);
-      this.Classify();
   }
 
   handleUpdateInput(value) {
@@ -449,13 +485,16 @@ class SolrConnectorDemo extends React.Component {
     return { muiTheme: getMuiTheme(baseTheme) };
   }
 
-  //Test Classify
-  Classify(){
-      //console.log("Test")
-      //console.log(this.state.query)
-  }
+  handleChange(event, index, value){
+      event.preventDefault();
+      this.setState({
+          callsiteAction:value,
+          queryCallsites: 'callsites',
+      })
+  };
 
-  render() {
+
+    render() {
 
     var commitObjs;
     var compareObjs;
@@ -483,12 +522,12 @@ class SolrConnectorDemo extends React.Component {
           commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
               return <MyComponents.Detail commit={s} key={i}/>
           });
+          if(this.state.queryCallsites != "" || this.state.queryImport != "" || this.state.queryMethods != ""){
+              var query = this.state.importEntered;
+              var importsChecked = this.state.queryImport;
 
-          if(this.state.query != '*:*'){
-              var query = this.state.query;
-              var Type = this.state.queryType;
               tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
-                  return <MyComponents.Added commit={s} data={query} key={i} queryType={Type}/>
+                  return <MyComponents.Added commit={s} data={query} key={i} queryImport={importsChecked}/>
               });
           }
       }
@@ -529,24 +568,30 @@ class SolrConnectorDemo extends React.Component {
         </p>
         </div>
         <div className="col s12 m12 l12">
-            <p>
                 <input className="with-gap" name="group3" type="checkbox" id="imports" value="imports"
-                       onChange={e => {this.setState({ queryType: 'imports' })}}/>
+                       onChange={e => {this.setState({ queryImport: 'imports' })}}/>
                 <label htmlFor="imports">Imports</label>
-                &nbsp;&nbsp;
-                <input className="with-gap" name="group3" type="checkbox" id="callsites" value="callsites"
-                       onChange={e => {this.setState({ queryCallsites: 'callsites' })}}/>
-                <label htmlFor="callsites">Callsites</label>
                 &nbsp;&nbsp;
                 <input className="with-gap" name="group3" type="checkbox" id="methods" value="methods"
                        onChange={e => {this.setState({ queryMethods: 'methods' })}}/>
                 <label htmlFor="methods">Methods</label>
-            </p>
+                <DropDownMenu value={this.state.callsiteAction} onChange={this.handleChange.bind(this)}>
+                    <MenuItem value="all" primaryText="All Callsites" />
+                    <MenuItem value="added" primaryText="Added" />
+                    <MenuItem value="removed" primaryText="Removed" />
+                    <MenuItem value="modified" primaryText="Modified" />
+                </DropDownMenu>
           <p>
-          import statement(query): {" "}
+          query: {" "}
           <input type="text" value={this.state.query}
             onChange={e => {this.setState({ query: e.target.value })}} />
           {" "}
+          </p>
+          <p>
+            imports(fq): {" "}
+            <input type="text" value={this.state.importEntered}
+            onChange={e => {this.setState({ importEntered: e.target.value })}} />
+            {" "}
           </p>
           <p>
             callsites(fq): {" "}
@@ -554,6 +599,7 @@ class SolrConnectorDemo extends React.Component {
               onChange={e => {this.setState({ callsite: e.target.value })}} />
             {" "}
           </p>
+
         </div>
         <div className="col s12 m12 l12">
         <p>
@@ -568,16 +614,6 @@ class SolrConnectorDemo extends React.Component {
              <input type="text" value={this.state.fetchFields}
               onChange={e => {this.setState({ fetchFields: e.target.value })}} />
            </p>
-        </div>
-
-        <div className="col s12 m12 l12">
-            <AutoComplete
-                hintText="Filter by Props"
-                filter={AutoComplete.noFilter}
-                dataSource={allFields}
-                onUpdateInput={this.handleUpdateInput.bind(this)}
-                onNewRequest={this.handleNewRequest.bind(this)}
-            /><br />
         </div>
 
         <div className="col s12 m12 l12">
@@ -605,11 +641,11 @@ class SolrConnectorDemo extends React.Component {
           <Tab label="Commit Objects" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
           <List id="list">
             <Subheader>{numFound} results fetched.</Subheader>
-            {commitObjs}
+              {tmpCommitObjs}
           </List>
 
           <div>
-              {tmpCommitObjs}
+              {commitObjs}
           </div>
 
           </Tab>
