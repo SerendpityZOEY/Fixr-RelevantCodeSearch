@@ -12,6 +12,9 @@ import AutoComplete from 'material-ui/AutoComplete';
 import MenuItem from 'material-ui/MenuItem';
 import DropDownMenu from 'material-ui/DropDownMenu';
 
+/*Syntax Highlighting*/
+import Highlight from 'react-highlight';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
@@ -25,14 +28,11 @@ const styles = {
   table:{
     fontSize:12
   },
+  customWidth: {
+      paddingLeft: 9,
+  },
   listItemAdded:{
     backgroundColor:'#c8e6c9'
-  },
-  listItemRemoved:{
-    backgroundColor:'#ffccbc'
-  },
-  customWidth: {
-      width: 200,
   },
 };
 
@@ -371,6 +371,53 @@ MyComponents.Added = React.createClass({
     }
 });
 
+MyComponents.Contents = React.createClass({
+   render: function(){
+       var commit = this.props.commit;
+       var add = [];
+       var remove = [];
+       var patch = [];
+       var code = [];
+       var prev = [];
+       var query = this.props.data;
+
+       commit.c_patch_t[0].split("\n").forEach( function (line, index) {
+           if (line.length > 0) {
+               //patch.push(line.substring(1))
+               patch.push(line)
+           }
+           if (line.match(/^\+/)) {
+               add.push(index);
+               code.push(line+'\n');
+           }
+           if (line.match(/^\-/)) {
+               //line.insertRule("#blanc { color: red }", index+1);
+               remove.push(index);
+           }
+/*
+           if(query===undefined) code.push(line+'\n');
+           else if(line.includes(query)){
+               //if index-5 <= endInd, prev.slice(Math.max(prev.length - diff, 1)), diff = index-endInd
+               code.push(prev.join('\n')+'\n'+index+" "+line+'\n');
+           }
+           if(prev.length>5){
+               prev.shift();
+           }
+           prev.push(index+" "+line);
+*/
+       });
+
+       return(<div>
+           <Highlight className='java' id="java">
+               {
+                   //patch.join('\n')
+                   commit.c_patch_t
+               }
+           </Highlight>
+           </div>
+       )
+   }
+});
 class SolrConnectorDemo extends React.Component {
   constructor(props) {
     super(props);
@@ -389,7 +436,8 @@ class SolrConnectorDemo extends React.Component {
       callsite:"", //input of callsites
 
       queryMethods:"", //value get from checkbox
-      callsiteAction: "all"
+      callsiteAction: "all",
+      importAction: "all",
     }
   }
 
@@ -417,9 +465,22 @@ class SolrConnectorDemo extends React.Component {
     //TODO: Rephrase the query filter
     var initialFilter=[];
     if(this.state.queryImport === 'imports'){
-        var importFl = 'c_imports_added_t:'+this.state.importEntered;
-        importFl += ' OR c_imports_removed_t:'+this.state.importEntered;
-        importFl += ' OR c_imports_t:'+this.state.importEntered;
+        switch(this.state.importAction){
+            case 'added':
+                var importFl = 'c_imports_added_t:'+this.state.importEntered;
+                break;
+            case 'removed':
+                importFl = 'c_imports_removed_t:'+this.state.importEntered;
+                break;
+            case 'modified':
+                importFl = 'c_imports_added_t:'+this.state.importEntered;
+                importFl += ' OR c_imports_removed_t:'+this.state.importEntered;
+                break;
+            default:
+                importFl = 'c_imports_t:'+this.state.importEntered;
+                importFl += ' OR c_imports_added_t:'+this.state.importEntered;
+                importFl += ' OR c_imports_removed_t:'+this.state.importEntered;
+        }
         initialFilter.push(importFl);
     }
     if(this.state.queryMethods === 'methods'){
@@ -493,6 +554,13 @@ class SolrConnectorDemo extends React.Component {
       })
   };
 
+  handleimChange(event, index, value){
+      this.setState({
+          importAction:value,
+          queryImport: 'imports',
+      })
+  };
+
 
     render() {
 
@@ -502,6 +570,8 @@ class SolrConnectorDemo extends React.Component {
     var numFound=0;
 
     var tmpCommitObjs;
+
+    var commitContents;
 
     if(this.props.solrConnector.response!=null){
       console.log('see',this.props.solrConnector.response.response.docs);
@@ -530,6 +600,9 @@ class SolrConnectorDemo extends React.Component {
                   return <MyComponents.Added commit={s} data={query} key={i} queryImport={importsChecked}/>
               });
           }
+          commitContents = this.props.solrConnector.response.response.docs.map(function(s,i){
+              return <MyComponents.Contents commit={s} key={i} data={query}/>
+          });
       }
 
       compareObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
@@ -568,19 +641,23 @@ class SolrConnectorDemo extends React.Component {
         </p>
         </div>
         <div className="col s12 m12 l12">
-                <input className="with-gap" name="group3" type="checkbox" id="imports" value="imports"
-                       onChange={e => {this.setState({ queryImport: 'imports' })}}/>
-                <label htmlFor="imports">Imports</label>
-                &nbsp;&nbsp;
-                <input className="with-gap" name="group3" type="checkbox" id="methods" value="methods"
-                       onChange={e => {this.setState({ queryMethods: 'methods' })}}/>
-                <label htmlFor="methods">Methods</label>
-                <DropDownMenu value={this.state.callsiteAction} onChange={this.handleChange.bind(this)}>
-                    <MenuItem value="all" primaryText="All Callsites" />
-                    <MenuItem value="added" primaryText="Added" />
-                    <MenuItem value="removed" primaryText="Removed" />
-                    <MenuItem value="modified" primaryText="Modified" />
-                </DropDownMenu>
+            <span>
+            <DropDownMenu value={this.state.importAction} onChange={this.handleimChange.bind(this)} labelStyle={styles.customWidth}>
+                <MenuItem value="all" primaryText="All Imports" />
+                <MenuItem value="added" primaryText="Added" />
+                <MenuItem value="removed" primaryText="Removed" />
+                <MenuItem value="modified" primaryText="Modified" />
+            </DropDownMenu>
+            <input className="with-gap" name="group3" type="checkbox" id="methods" value="methods"
+                   onChange={e => {this.setState({ queryMethods: 'methods' })}}/>
+            <label htmlFor="methods">Methods</label>
+            <DropDownMenu value={this.state.callsiteAction} onChange={this.handleChange.bind(this)} labelStyle={styles.customWidth}>
+                <MenuItem value="all" primaryText="All Callsites" />
+                <MenuItem value="added" primaryText="Added" />
+                <MenuItem value="removed" primaryText="Removed" />
+                <MenuItem value="modified" primaryText="Modified" />
+            </DropDownMenu>
+                </span>
           <p>
           query: {" "}
           <input type="text" value={this.state.query}
@@ -655,6 +732,13 @@ class SolrConnectorDemo extends React.Component {
                 <Subheader>Compare Versions</Subheader>
                 {compareObjs}
             </div>
+          </Tab>
+
+          <Tab label="Source Code" style={{backgroundColor:'#F5F5F5',color:'#000'}}>
+              <div>
+                  <Subheader>Code Snippet</Subheader>
+                  {commitContents}
+              </div>
           </Tab>
 
           </Tabs>

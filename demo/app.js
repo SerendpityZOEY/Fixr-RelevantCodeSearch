@@ -4,7 +4,6 @@ import SolrConnector from 'react-solr-connector';
 import SolrConnectorDemo from './demo.js';
 import Navbar from './navbar.js';
 
-
 class App extends React.Component {
 
   constructor(props) {
