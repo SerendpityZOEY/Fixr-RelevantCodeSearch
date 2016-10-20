@@ -8,12 +8,14 @@
 - Syntax highlighting code snippet(child patch content):
     - highlight lines with +/- symbols
     - mark the lines that has code being folded
-    - highlight the methods in 'c_methods_t' field
     - retrieve link to github for entire view of source code (github.com/+repo_sni+c_hash_sni)
     - retrieve link to github for the view of parent node (github.com/+repo_sni+p_hash_sni)
+    - highlight the methods in 'c_methods_t' field
     - Add repo and file name as title for each commit
     - count additions and deletions, add as description under each title
     - Add commit messages as subtitle for each commit (c_subject_t)
+- For search query with api calls:
+    - hightlight search query (api calls), display the lines around this line and collapse the rest of patch.
 
 #### Others
 - Deployment

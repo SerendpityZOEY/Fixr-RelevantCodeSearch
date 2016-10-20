@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/TODO.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/app.js" afterPath="$PROJECT_DIR$/demo/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/index.html" afterPath="$PROJECT_DIR$/demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/TODO.md" afterPath="$PROJECT_DIR$/docs/TODO.md" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +26,7 @@
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="1650">
               <caret line="412" column="37" selection-start-line="412" selection-start-column="37" selection-end-line="412" selection-end-column="37" />
               <folding>
                 <element signature="e#64#112#0" expanded="true" />
@@ -60,8 +55,8 @@
         <entry file="file://$PROJECT_DIR$/docs/TODO.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="345">
-                <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <first_editor relative-caret-position="375">
+                <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -199,20 +194,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SolrProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolrProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolrProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -935,11 +916,12 @@
       <workItem from="1476813908539" duration="6684000" />
       <workItem from="1476907538958" duration="4466000" />
       <workItem from="1477003255416" duration="59000" />
+      <workItem from="1477003436940" duration="222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171556000" />
+    <option name="totallyTimeSpent" value="171778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1041" y="429" width="1280" height="709" extended-state="0" />
@@ -989,6 +971,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/demo/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="412" column="37" selection-start-line="412" selection-start-column="37" selection-end-line="412" selection-end-column="37" />
+          <folding>
+            <element signature="e#64#112#0" expanded="true" />
+            <element signature="e#454#506#0" expanded="true" />
+            <element signature="e#630#670#0" expanded="true" />
+            <element signature="e#771#1002#0" expanded="false" />
+            <element signature="e#1046#2263#0" expanded="false" />
+            <element signature="e#2331#8527#0" expanded="false" />
+            <element signature="e#2356#8516#0" expanded="false" />
+            <element signature="e#8571#9381#0" expanded="false" />
+            <element signature="e#10032#11403#0" expanded="false" />
+            <element signature="e#14636#15442#0" expanded="false" />
+            <element signature="e#15488#15741#0" expanded="false" />
+            <element signature="e#15791#16659#0" expanded="false" />
+            <element signature="e#16725#17094#0" expanded="false" />
+            <element signature="n#!!block;n#handleUpdateInput#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#handleNewRequest#0;n#SolrConnectorDemo#0" expanded="false" />
+            <element signature="n#!!block;n#getChildContext#0;n#SolrConnectorDemo#0" expanded="false" />
+            <marker date="1476913758000" expanded="true" signature="9075:9152" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/TODO.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1489,7 +1519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="1650">
           <caret line="412" column="37" selection-start-line="412" selection-start-column="37" selection-end-line="412" selection-end-column="37" />
           <folding>
             <element signature="e#64#112#0" expanded="true" />
@@ -1513,11 +1543,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/TODO.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="345">
-            <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
