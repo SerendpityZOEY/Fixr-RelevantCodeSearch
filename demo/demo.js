@@ -53,7 +53,7 @@ class SolrConnectorDemo extends React.Component {
       queryImport:"all", //value get from checkbox
       importEntered:"",
 
-      queryCallsites:"", //value get from checkbox
+      queryCallsites:"all", //value get from checkbox
       callsite:"", //input of callsites
 
       queryMethods:"", //value get from checkbox

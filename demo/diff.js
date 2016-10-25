@@ -59,7 +59,10 @@ class Diff extends React.Component{
         var importEntered = this.props.data; //input imposts
         var callsiteEntered = this.props.callsite; //input callsites
 
-        console.log(queryImport,queryCallsite,importEntered,callsiteEntered)
+        console.log('1',queryImport)
+        console.log('2',queryCallsite)
+        console.log('3',importEntered)
+        console.log('4',callsiteEntered)
         var fileName=commit.name_sni;
         var browseFile = 'https://github.com/'+commit.repo_sni+'/tree/'+commit.c_hash_sni;
         var patch = [];
@@ -104,11 +107,14 @@ class Diff extends React.Component{
                         <ListItem
                             key={1}
                             primaryText={commit.c_patch_t[0].split("\n").map(i => {
-                                if(i.includes(importEntered) || i.includes(callsiteEntered)){
-                                    var start = i.indexOf(importEntered);
-                                    var end = start+importEntered.length;
-                                    return <pre style={{backgroundColor:'#ffe082',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
+                                if(queryImport!='all' || queryCallsite!='all'){
+                                    if(i.includes(importEntered) || i.includes(callsiteEntered)){
+                                        var start = i.indexOf(importEntered);
+                                        var end = start+importEntered.length;
+                                        return <pre style={{backgroundColor:'#ffe082',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
+                                    }
                                 }
+
                                 if(i.match(/^\+/))
                                     return <pre style={{backgroundColor:'#c8e6c9',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                                 if(i.match(/^\-/))
