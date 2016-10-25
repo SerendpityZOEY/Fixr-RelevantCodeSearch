@@ -13,6 +13,10 @@ const styles = {
     headline: {
         fontSize: 14,
     },
+    item1: {
+        fontSize:14,
+        fontWeight: 800,
+    },
     table:{
         fontSize:12
     },
@@ -71,6 +75,7 @@ class Diff extends React.Component{
         var remove = 0;
         var parent_hash = commit.p_hash_sni;
         var child_hash = commit.c_hash_sni;
+        var title = commit.c_user_sni+': '+commit.c_subject_t;
         var sourceCode = 'https://github.com/'+commit.repo_sni+'/blob/'+commit.c_hash_sni+'/'+commit.name_sni;
         commit.c_patch_t[0].split("\n").forEach( function (line, index) {
             if (line.length > 0) {
@@ -96,7 +101,7 @@ class Diff extends React.Component{
                     nestedItems={[
                         <ListItem
                             key={0}
-                            primaryText={commit.c_subject_t}
+                            primaryText={title}
                             href={sourceCode}
                             target="_blank"
                             rightIconButton={
@@ -108,7 +113,7 @@ class Diff extends React.Component{
                                 icon={<FontIcon className="fa fa-github fa-lg" />}
                                 />
                             }
-                            style={styles.headline}
+                            style={styles.item1}
                         />,
                         <ListItem
                             key={1}

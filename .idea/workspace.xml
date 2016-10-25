@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/diff.js" afterPath="$PROJECT_DIR$/demo/diff.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -49,12 +47,12 @@
       <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/diff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+            <state relative-caret-position="225">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
                 <element signature="e#39#65#0" expanded="true" />
-                <element signature="e#679#1028#0" expanded="false" />
-                <element signature="e#1701#1870#0" expanded="false" />
+                <element signature="e#745#1094#0" expanded="false" />
+                <element signature="e#1767#1936#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -63,7 +61,7 @@
       <file leaf-file-name="contents.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/contents.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="345">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#90#130#0" expanded="true" />
@@ -983,12 +981,12 @@
       <workItem from="1477330205626" duration="24478000" />
       <workItem from="1477390041350" duration="559000" />
       <workItem from="1477413925479" duration="2109000" />
-      <workItem from="1477422413368" duration="1389000" />
+      <workItem from="1477422413368" duration="2276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200313000" />
+    <option name="totallyTimeSpent" value="201200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="523" width="1203" height="709" extended-state="0" />
@@ -1536,16 +1534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/contents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#90#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/TODO.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
@@ -1603,14 +1591,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/contents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#90#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/diff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+        <state relative-caret-position="225">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding>
             <element signature="e#39#65#0" expanded="true" />
-            <element signature="e#679#1028#0" expanded="false" />
-            <element signature="e#1701#1870#0" expanded="false" />
+            <element signature="e#745#1094#0" expanded="false" />
+            <element signature="e#1767#1936#0" expanded="false" />
           </folding>
         </state>
       </provider>
