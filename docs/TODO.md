@@ -19,6 +19,7 @@
     - Some api call doesn't exist in patch, create a separate code snippet for lines around api call.
 - Others:
     - put search panel in side bar or expand right side when scrolling down.
+    - Open the source code in an Atom editor
     
 #### Others
 - Deployment
