@@ -19,9 +19,10 @@ const styles = {
     customWidth: {
         paddingLeft: 9,
     },
-    listItemAdded:{
-        backgroundColor:'#c8e6c9'
-    },
+    codeSnippet:{
+        fontFamily:"Fira Mono",
+        fontSize:14
+    }
 };
 
 const TinyBarChart = React.createClass({
@@ -57,7 +58,6 @@ class Diff extends React.Component{
         var fileName=commit.name_sni;
         var browseFile = 'https://github.com/'+commit.repo_sni+'/tree/'+commit.c_hash_sni;
         var patch = [];
-        var code = [];
         var add = 0;
         var remove = 0;
         commit.c_patch_t[0].split("\n").forEach( function (line, index) {
@@ -104,10 +104,13 @@ class Diff extends React.Component{
                                 if(i.match(/^\-/))
                                     return <pre style={{backgroundColor:'#ffcdd2',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                                 if(i.includes('@@'))
-                                    return <pre  style={{color:'#9e9e9e',backgroundColor:'#e3f2fd',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
+                                    return <pre  style={{color:'#9e9e9e',backgroundColor:'#e3f2fd',marginTop:0,marginBottom:0}}><code>
+                                        <FontIcon className="fa fa-expand" style={{fontSize:14}} />{i}
+                                        </code></pre>;
                                 else
                                     return <pre style={{marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                             })}
+                            style={styles.codeSnippet}
                         />,
                     ]}
                 />

@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/diff.js" afterPath="$PROJECT_DIR$/demo/diff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/index.html" afterPath="$PROJECT_DIR$/demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/styles.css" afterPath="$PROJECT_DIR$/demo/styles.css" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+            <state relative-caret-position="345">
+              <caret line="215" column="65" selection-start-line="215" selection-start-column="65" selection-end-line="215" selection-end-column="65" />
               <folding>
                 <element signature="e#642#873#0" expanded="false" />
                 <element signature="e#2352#3158#0" expanded="false" />
@@ -48,11 +48,11 @@
       <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/diff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="108" column="82" selection-start-line="108" selection-start-column="82" selection-end-line="108" selection-end-column="82" />
+            <state relative-caret-position="450">
+              <caret line="107" column="94" selection-start-line="107" selection-start-column="94" selection-end-line="107" selection-end-column="94" />
               <folding>
                 <element signature="e#39#65#0" expanded="true" />
-                <element signature="e#664#1013#0" expanded="false" />
+                <element signature="e#679#1028#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,13 +156,13 @@
         <option value="$PROJECT_DIR$/docs/TODO.md" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/demo/styles.css" />
         <option value="$PROJECT_DIR$/demo/visualize.js" />
         <option value="$PROJECT_DIR$/demo/detail.js" />
         <option value="$PROJECT_DIR$/demo/fieldlist.js" />
         <option value="$PROJECT_DIR$/demo/contents.js" />
         <option value="$PROJECT_DIR$/demo/components/githubIcon.js" />
         <option value="$PROJECT_DIR$/demo/index.html" />
+        <option value="$PROJECT_DIR$/demo/styles.css" />
         <option value="$PROJECT_DIR$/demo/demo.js" />
         <option value="$PROJECT_DIR$/demo/diff.js" />
       </list>
@@ -964,12 +964,12 @@
       <workItem from="1476907538958" duration="4466000" />
       <workItem from="1477003255416" duration="59000" />
       <workItem from="1477003436940" duration="222000" />
-      <workItem from="1477330205626" duration="20535000" />
+      <workItem from="1477330205626" duration="22600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192313000" />
+    <option name="totallyTimeSpent" value="194378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="84" y="23" width="1203" height="712" extended-state="0" />
@@ -1468,14 +1468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1570,10 +1562,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+        <state relative-caret-position="345">
+          <caret line="215" column="65" selection-start-line="215" selection-start-column="65" selection-end-line="215" selection-end-column="65" />
           <folding>
             <element signature="e#642#873#0" expanded="false" />
             <element signature="e#2352#3158#0" expanded="false" />
@@ -1589,11 +1589,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/diff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="108" column="82" selection-start-line="108" selection-start-column="82" selection-end-line="108" selection-end-column="82" />
+        <state relative-caret-position="450">
+          <caret line="107" column="94" selection-start-line="107" selection-start-column="94" selection-end-line="107" selection-end-column="94" />
           <folding>
             <element signature="e#39#65#0" expanded="true" />
-            <element signature="e#664#1013#0" expanded="false" />
+            <element signature="e#679#1028#0" expanded="false" />
           </folding>
         </state>
       </provider>

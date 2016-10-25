@@ -213,8 +213,8 @@ class SolrConnectorDemo extends React.Component {
           //    return <Detail commit={s} key={i}/>
           //});
           //for diff.js
-          var query = this.state.importEntered;
-          var importsChecked = this.state.queryImport;
+          var query = this.state.importEntered;//value from input
+          var importsChecked = this.state.queryImport;//value from checkbox
 
           tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
               return <Diff commit={s} data={query} key={i} queryImport={importsChecked}/>
