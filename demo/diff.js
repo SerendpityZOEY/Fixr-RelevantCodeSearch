@@ -4,6 +4,10 @@
 import React from 'react';
 import {List, ListItem} from 'material-ui/List';
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
+import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import IconButton from 'material-ui/IconButton';
+import FlatButton from 'material-ui/FlatButton';
+import FontIcon from 'material-ui/FontIcon';
 
 const styles = {
     headline: {
@@ -51,7 +55,7 @@ class Diff extends React.Component{
 
         var field = this.props.queryImport; //field is 'imports'
         var fileName=commit.name_sni;
-
+        var browseFile = 'https://github.com/'+commit.repo_sni+'/tree/'+commit.c_hash_sni;
         var patch = [];
         var code = [];
         var add = 0;
@@ -80,15 +84,29 @@ class Diff extends React.Component{
                     nestedItems={[
                         <ListItem
                             key={0}
+                            primaryText={commit.c_subject_t}
+                            rightIconButton={
+                                <FlatButton
+                                label="Browse Files"
+                                href={browseFile}
+                                target="_blank"
+                                secondary={true}
+                                icon={<FontIcon className="fa fa-github fa-lg" />}
+                                />
+                            }
+                            style={styles.headline}
+                        />,
+                        <ListItem
+                            key={1}
                             primaryText={commit.c_patch_t[0].split("\n").map(i => {
                                 if(i.match(/^\+/))
-                                    return <pre style={{backgroundColor:'#c8e6c9'}}><code>{i}</code></pre>;
+                                    return <pre style={{backgroundColor:'#c8e6c9',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                                 if(i.match(/^\-/))
-                                    return <pre style={{backgroundColor:'#ffcdd2'}}><code>{i}</code></pre>;
+                                    return <pre style={{backgroundColor:'#ffcdd2',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                                 if(i.includes('@@'))
-                                    return <pre  style={{color:'#9e9e9e',backgroundColor:'#e3f2fd'}}><code>{i}</code></pre>;
+                                    return <pre  style={{color:'#9e9e9e',backgroundColor:'#e3f2fd',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                                 else
-                                    return <pre><code>{i}</code></pre>;
+                                    return <pre style={{marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
                             })}
                         />,
                     ]}

@@ -50,7 +50,7 @@ class SolrConnectorDemo extends React.Component {
       offset:0,
       rows: 10,
       //newly added
-      queryImport:"", //value get from checkbox
+      queryImport:"all", //value get from checkbox
       importEntered:"",
 
       queryCallsites:"", //value get from checkbox
@@ -207,20 +207,19 @@ class SolrConnectorDemo extends React.Component {
               return <FieldList commit={s} key={i}/>
           });
 
-
-
       }else if(this.state.fetchFields.length==0){
-          commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
-              return <Detail commit={s} key={i}/>
-          });
-          if(this.state.queryCallsites != "" || this.state.queryImport != "" || this.state.queryMethods != ""){
-              var query = this.state.importEntered;
-              var importsChecked = this.state.queryImport;
+          //all fields commits, not used anymore
+          //commitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+          //    return <Detail commit={s} key={i}/>
+          //});
+          //for diff.js
+          var query = this.state.importEntered;
+          var importsChecked = this.state.queryImport;
 
-              tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
-                  return <Diff commit={s} data={query} key={i} queryImport={importsChecked}/>
-              });
-          }
+          tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function(s,i){
+              return <Diff commit={s} data={query} key={i} queryImport={importsChecked}/>
+          });
+          //for contents.js
           commitContents = this.props.solrConnector.response.response.docs.map(function(s,i){
               return <Contents commit={s} key={i} data={query}/>
           });
@@ -341,10 +340,6 @@ class SolrConnectorDemo extends React.Component {
             <Subheader>{numFound} results fetched.</Subheader>
               {tmpCommitObjs}
           </List>
-
-          <div>
-              {commitObjs}
-          </div>
 
           </Tab>
 
