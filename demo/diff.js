@@ -58,16 +58,20 @@ class Diff extends React.Component{
         var queryCallsite = this.props.queryCallsites;//field is 'callsites'
         var importEntered = this.props.data; //input imposts
         var callsiteEntered = this.props.callsite; //input callsites
-
+        /*
         console.log('1',queryImport)
         console.log('2',queryCallsite)
         console.log('3',importEntered)
         console.log('4',callsiteEntered)
+        */
         var fileName=commit.name_sni;
         var browseFile = 'https://github.com/'+commit.repo_sni+'/tree/'+commit.c_hash_sni;
         var patch = [];
         var add = 0;
         var remove = 0;
+        var parent_hash = commit.p_hash_sni;
+        var child_hash = commit.c_hash_sni;
+        var sourceCode = 'https://github.com/'+commit.repo_sni+'/blob/'+commit.c_hash_sni+'/'+commit.name_sni;
         commit.c_patch_t[0].split("\n").forEach( function (line, index) {
             if (line.length > 0) {
                 //patch.push(line.substring(1))
@@ -93,6 +97,8 @@ class Diff extends React.Component{
                         <ListItem
                             key={0}
                             primaryText={commit.c_subject_t}
+                            href={sourceCode}
+                            target="_blank"
                             rightIconButton={
                                 <FlatButton
                                 label="Browse Files"

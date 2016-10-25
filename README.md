@@ -1,6 +1,6 @@
-# SolrProject
+# Solr Relevant Commit Search
 
-This application uses ReactJS to connect with Solr and fetching data. Also used Material UI and Materializecss.
+This application uses ReactJS to connect with Solr to search data. Applied Material UI and Materializecss for front-end.
 
 ## First Time Setup
 If you already have npm and node installed, you can skip this step.
@@ -41,6 +41,7 @@ Node modules used:
 - recharts
 - react-solr-connector
 - react-highlight
+
 
 * If there is a CORS error, please install this chrome plugin:
 * https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
