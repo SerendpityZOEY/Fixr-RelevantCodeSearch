@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demo.js" afterPath="$PROJECT_DIR$/demo/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/diff.js" afterPath="$PROJECT_DIR$/demo/diff.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/TODO.md" afterPath="$PROJECT_DIR$/docs/TODO.md" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +42,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TODO.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/TODO.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diff.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/diff.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -151,7 +166,6 @@
         <option value="$PROJECT_DIR$/demo/Dropdown.js" />
         <option value="$PROJECT_DIR$/demo/editor.js" />
         <option value="$PROJECT_DIR$/demo/app.js" />
-        <option value="$PROJECT_DIR$/docs/TODO.md" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/demo/visualize.js" />
@@ -163,6 +177,7 @@
         <option value="$PROJECT_DIR$/demo/styles.css" />
         <option value="$PROJECT_DIR$/demo/demo.js" />
         <option value="$PROJECT_DIR$/demo/diff.js" />
+        <option value="$PROJECT_DIR$/docs/TODO.md" />
       </list>
     </option>
   </component>
@@ -238,7 +253,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -962,12 +977,12 @@
       <workItem from="1476907538958" duration="4466000" />
       <workItem from="1477003255416" duration="59000" />
       <workItem from="1477003436940" duration="222000" />
-      <workItem from="1477330205626" duration="24130000" />
+      <workItem from="1477330205626" duration="24401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195908000" />
+    <option name="totallyTimeSpent" value="196179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="84" y="23" width="1203" height="712" extended-state="0" />
@@ -1420,20 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/TODO.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="375">
-            <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1594,6 +1595,20 @@
             <element signature="e#679#1028#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/TODO.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
