@@ -107,8 +107,8 @@ class Diff extends React.Component{
                         <ListItem
                             key={1}
                             primaryText={commit.c_patch_t[0].split("\n").map(i => {
-                                if(queryImport!='all' || queryCallsite!='all'){
-                                    if(i.includes(importEntered) || i.includes(callsiteEntered)){
+                                if(callsiteEntered!=''){
+                                    if(i.includes(callsiteEntered)){
                                         var start = i.indexOf(importEntered);
                                         var end = start+importEntered.length;
                                         return <pre style={{backgroundColor:'#ffe082',marginTop:0,marginBottom:0}}><code>{i}</code></pre>;
