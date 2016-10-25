@@ -3,13 +3,11 @@
  */
 import React from 'react';
 import {List, ListItem} from 'material-ui/List';
+import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 const styles = {
     headline: {
-        fontSize: 24,
-        paddingTop: 16,
-        marginBottom: 12,
-        fontWeight: 400,
+        fontSize: 14,
     },
     table:{
         fontSize:12
@@ -21,6 +19,20 @@ const styles = {
         backgroundColor:'#c8e6c9'
     },
 };
+
+const TinyBarChart = React.createClass({
+
+    render () {
+        return (
+            <span style={{position:'fixed',marginLeft:-60,marginTop:-10}}>
+            <BarChart width={30} height={30} data={this.props.data}>
+                <Bar dataKey='add' fill='#c8e6c9'/>
+                <Bar dataKey='remove' fill='#ffcdd2'/>
+            </BarChart>
+            </span>
+        );
+    }
+})
 
 class Diff extends React.Component{
 
@@ -38,75 +50,43 @@ class Diff extends React.Component{
         var commit = this.props.commit;
 
         var field = this.props.queryImport; //field is 'imports'
-        var repo=commit.repo_sni;
-        var contents = this.parseData(commit,"c_patch_t","\n");
-        //TODO: later field can be callsites
-        /*
-         if(!field.includes("added") && !field.includes("removed")){
-         field = 'c_imports_added_t';
-         }
-         var query = this.props.data; //query is a particular import statement
-         var importAdded = commit[field].toString();
+        var fileName=commit.name_sni;
 
-         var importRemoved = commit[field.replace("added","removed")].toString();
-         var linesAdded=null;
-         var linesRemoved=null;
-         var repo=commit.repo_sni;
-         var action;
-
-         var restCommits = this.parseData(commit,"p_imports_t"," ");
-
-         var methods = this.parseData(commit,"c_methods_t"," ");
-
-         var contents = this.parseData(commit,"c_contents_t","\n");
-         //TODO: Simplify Code
-         if(importAdded.includes(query) && !importRemoved.includes(query)){
-         linesAdded = commit[field];
-         linesRemoved = commit[field.replace("added","removed")];
-         action = "ADD";
-         }else if(!importAdded.includes(query) && importRemoved.includes(query)){
-         linesAdded = commit[field];
-         linesRemoved = commit[field.replace("added","removed")];
-         action = "REMOVE";
-         }else if(importAdded.includes(query) && importRemoved.includes(query)){
-         linesAdded = commit[field];
-         linesRemoved = commit[field.replace("added","removed")];
-         }
-         else{
-         return null;
-         }
-         */
         var patch = [];
         var code = [];
+        var add = 0;
+        var remove = 0;
         commit.c_patch_t[0].split("\n").forEach( function (line, index) {
             if (line.length > 0) {
                 //patch.push(line.substring(1))
                 patch.push(line+'\n');
             }
             if (line.match(/^\+/)) {
-                //add.push(index);
-                code.push(line+'\n');
+                add++;
             }
             if (line.match(/^\-/)) {
-                code.push(line+'\n');
-                //remove.push(index);
+                remove++;
             }
         });
-        console.log(patch)
+
         return(
             <div>
                 <ListItem
-                    primaryText={repo}
+                    primaryText={fileName}
+                    leftIcon={<TinyBarChart data={[{name:'Page A', add: add, remove: remove},]}/>}
                     initiallyOpen={false}
                     primaryTogglesNestedList={true}
+                    style={styles.headline}
                     nestedItems={[
                         <ListItem
                             key={0}
                             primaryText={commit.c_patch_t[0].split("\n").map(i => {
                                 if(i.match(/^\+/))
-                                    return <pre><code style={{backgroundColor:'#c8e6c9'}}>{i}</code></pre>;
+                                    return <pre style={{backgroundColor:'#c8e6c9'}}><code>{i}</code></pre>;
                                 if(i.match(/^\-/))
-                                    return <pre><code style={{backgroundColor:'#ffcdd2'}}>{i}</code></pre>;
+                                    return <pre style={{backgroundColor:'#ffcdd2'}}><code>{i}</code></pre>;
+                                if(i.includes('@@'))
+                                    return <pre  style={{color:'#9e9e9e',backgroundColor:'#e3f2fd'}}><code>{i}</code></pre>;
                                 else
                                     return <pre><code>{i}</code></pre>;
                             })}
