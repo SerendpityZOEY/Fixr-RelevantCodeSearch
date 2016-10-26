@@ -19,6 +19,11 @@ For Mac:
 
 ## Running
 
+- Compile:
+```
+$npm run-script build-app
+```
+
 - Run with:
 ```
 $npm start
