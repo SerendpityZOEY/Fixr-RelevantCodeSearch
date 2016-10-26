@@ -1,13 +1,13 @@
-var CommonsChunkPlugin = require("./lib/CommonsChunkPlugin.js");
 var path = require('path');
 
 module.exports = {
   entry: [
-    './demo/app.js',
+    './lib/src/app.js',
   ],
   output: {
-    path: __dirname,
+    path: path.join(__dirname, './public/js/'),
     filename: 'bundle.js',
+    publicPath: '/js/'
   },
   module: {
     loaders: [{
