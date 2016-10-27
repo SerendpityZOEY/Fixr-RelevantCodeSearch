@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bundle.js" afterPath="$PROJECT_DIR$/public/js/bundle.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="149" column="54" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
+            <state relative-caret-position="495">
+              <caret line="170" column="5" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#39#65#0" expanded="true" />
@@ -1017,12 +1015,12 @@
       <workItem from="1477422413368" duration="3829000" />
       <workItem from="1477507968856" duration="7393000" />
       <workItem from="1477556735212" duration="6784000" />
-      <workItem from="1477581431794" duration="3307000" />
+      <workItem from="1477581431794" duration="3479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220237000" />
+    <option name="totallyTimeSpent" value="220409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -1252,8 +1250,8 @@
     <entry file="file://$PROJECT_DIR$/lib/src/test.js" />
     <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="149" column="54" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
+        <state relative-caret-position="495">
+          <caret line="170" column="5" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#39#65#0" expanded="true" />
