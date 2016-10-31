@@ -22,7 +22,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
+      <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+      <script>
+          // Initialize Firebase
+          var config = {
+              apiKey: "AIzaSyDkiG22NfKHBCAhZw6qee09AMQqjLc7dxM",
+              authDomain: "fixr-e9187.firebaseapp.com",
+              databaseURL: "https://fixr-e9187.firebaseio.com",
+              storageBucket: "fixr-e9187.appspot.com",
+              messagingSenderId: "326982378777"
+          };
+          firebase.initializeApp(config);
+      </script>
     <style type="text/css">
       .inputForm {
         margin: 10px;
