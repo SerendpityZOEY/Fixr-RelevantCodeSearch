@@ -49,5 +49,7 @@ $npm install
     - Click search.
 - *Note*:Methods filter is under developing.
 
+![Screen Shot](docs/ScreenShot.png)
+
 ## Deployment
 Tool is deployed at http://192.12.243.***:8080/.
