@@ -39,17 +39,6 @@ If you can't run the program, try the following command to install node modules 
 ```
 $npm install
 ```
-Node modules used:
-- react
-- react-dom
-- material-ui
-- recharts
-- react-solr-connector
-- react-highlight
-
-
-- If there is a CORS error, please install this chrome plugin:
-- https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
 
 ## Instructions
 
@@ -59,3 +48,6 @@ Node modules used:
     - eg: type `android.app.Fragment` in imports text field, or type `getId` in callsites field to specify the exact text.
     - Click search.
 - *Note*:Methods filter is under developing.
+
+## Deployment
+Tool is deployed at http://192.12.243.***:8080/.
