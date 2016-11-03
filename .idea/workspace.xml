@@ -2,42 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/heroku/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/heroku/testheroku.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/heroku/Procfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/heroku/testheroku.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/demo.js" afterPath="$PROJECT_DIR$/lib/src/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/README.md" afterPath="$PROJECT_DIR$/node_modules/firebase/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/app-node.js" afterPath="$PROJECT_DIR$/node_modules/firebase/app-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/app.d.ts" afterPath="$PROJECT_DIR$/node_modules/firebase/app.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/app.js" afterPath="$PROJECT_DIR$/node_modules/firebase/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/auth-node/auth.js" afterPath="$PROJECT_DIR$/node_modules/firebase/auth-node/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/auth-node/credential.js" afterPath="$PROJECT_DIR$/node_modules/firebase/auth-node/credential.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/auth-node/index.js" afterPath="$PROJECT_DIR$/node_modules/firebase/auth-node/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/auth-node/token-generator.js" afterPath="$PROJECT_DIR$/node_modules/firebase/auth-node/token-generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/auth.js" afterPath="$PROJECT_DIR$/node_modules/firebase/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/database-node.js" afterPath="$PROJECT_DIR$/node_modules/firebase/database-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/database.js" afterPath="$PROJECT_DIR$/node_modules/firebase/database.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-app-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-app-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-auth-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-auth-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-client-auth-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-client-auth-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-database-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-database-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-messaging-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-messaging-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-server-auth-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-server-auth-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-storage-externs.js" afterPath="$PROJECT_DIR$/node_modules/firebase/externs/firebase-storage-externs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-app.js" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-auth.js" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-database.js" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-database.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-messaging.js" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-messaging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase-storage.js" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase-storage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase.d.ts" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/firebase.js" afterPath="$PROJECT_DIR$/node_modules/firebase/firebase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/messaging.js" afterPath="$PROJECT_DIR$/node_modules/firebase/messaging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/node_modules/firebase/npm-shrinkwrap.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/package.json" afterPath="$PROJECT_DIR$/node_modules/firebase/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/storage.js" afterPath="$PROJECT_DIR$/node_modules/firebase/storage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.rules.json" afterPath="$PROJECT_DIR$/database.rules.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firebase.json" afterPath="$PROJECT_DIR$/firebase.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js" afterPath="$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/whatwg-fetch/package.json" afterPath="$PROJECT_DIR$/node_modules/whatwg-fetch/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bundle.js" afterPath="$PROJECT_DIR$/public/js/bundle.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,21 +34,35 @@
       <file leaf-file-name="react-solr-connector.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+            <state relative-caret-position="15">
+              <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testheroku.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/heroku/testheroku.js">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="347">
+                <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#38#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,32 +70,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="405">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/demo.js">
+      <file leaf-file-name="firebase.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/firebase.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-              <folding>
-                <element signature="e#64#112#0" expanded="true" />
-                <element signature="e#390#442#0" expanded="true" />
-                <element signature="n#!!block;n#onSubmit#0;n#SolrConnectorDemo#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+            <state relative-caret-position="120">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -136,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo/js/react-solr-connector.jsx" />
         <option value="$PROJECT_DIR$/src/react-solr-connector.js" />
         <option value="$PROJECT_DIR$/demo/js/app.jsx" />
         <option value="$PROJECT_DIR$/demo/data.jsx" />
@@ -171,9 +143,7 @@
         <option value="$PROJECT_DIR$/public/js/bundle.js" />
         <option value="$PROJECT_DIR$/.babelrc.json" />
         <option value="$PROJECT_DIR$/webpack.production.config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/src/test.js" />
         <option value="$PROJECT_DIR$/public/test.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
@@ -182,11 +152,14 @@
         <option value="$PROJECT_DIR$/docs/TODO.md" />
         <option value="$PROJECT_DIR$/lib/src/diff.js" />
         <option value="$PROJECT_DIR$/lib/src/demo.js" />
-        <option value="$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js" />
         <option value="$PROJECT_DIR$/lib/src/testheroku.js" />
         <option value="$PROJECT_DIR$/lib/heroku/Procfile" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/lib/heroku/testheroku.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/firebase.json" />
+        <option value="$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -201,10 +174,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="329" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="980" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,6 +203,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,11 +248,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,16 +269,9 @@
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="heroku" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,11 +294,11 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/lib/src" />
       <recent name="$PROJECT_DIR$/lib/components" />
-      <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -1035,15 +1003,20 @@
       <workItem from="1477639740166" duration="768000" />
       <workItem from="1477670533287" duration="439000" />
       <workItem from="1477895684464" duration="8017000" />
-      <workItem from="1477931834585" duration="3012000" />
+      <workItem from="1477931834585" duration="8675000" />
+      <workItem from="1478024638071" duration="6686000" />
+      <workItem from="1478047955190" duration="2074000" />
+      <workItem from="1478062932892" duration="3768000" />
+      <workItem from="1478109082039" duration="2285000" />
+      <workItem from="1478161791299" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236794000" />
+    <option name="totallyTimeSpent" value="257321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="329" width="1280" height="980" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1052,18 +1025,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5074766" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22890624" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1116,22 +1089,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-highlight/src/optimized.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-highlight/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1148,7 +1105,6 @@
     <entry file="file://$PROJECT_DIR$/demo/visualize.js" />
     <entry file="file://$PROJECT_DIR$/demo/diff.js" />
     <entry file="file://$PROJECT_DIR$/demo/contents.js" />
-    <entry file="file://$PROJECT_DIR$/npm-debug.log" />
     <entry file="file://$PROJECT_DIR$/lib/components/app.js" />
     <entry file="file://$PROJECT_DIR$/lib/components/autocomplete.js" />
     <entry file="file://$PROJECT_DIR$/lib/components/contents.js" />
@@ -1194,26 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="540">
-            <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -1252,9 +1188,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/TODO.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="225">
@@ -1263,59 +1196,79 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/heroku/Procfile" />
+    <entry file="file://$PROJECT_DIR$/lib/src/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/testheroku.js" />
+    <entry file="file://$PROJECT_DIR$/npm-debug.log" />
+    <entry file="file://$PROJECT_DIR$/database.rules.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+        <state relative-caret-position="468">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/heroku/Procfile">
+    <entry file="file://$PROJECT_DIR$/lib/heroku/testheroku.js" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        <state relative-caret-position="405">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+        <state relative-caret-position="15">
+          <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding>
-            <element signature="e#64#112#0" expanded="true" />
-            <element signature="e#390#442#0" expanded="true" />
-            <element signature="n#!!block;n#onSubmit#0;n#SolrConnectorDemo#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="347">
+            <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="34" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/heroku/testheroku.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
