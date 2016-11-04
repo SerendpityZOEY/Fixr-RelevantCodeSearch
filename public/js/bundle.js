@@ -25498,15 +25498,13 @@
 	            offset: 0,
 	            rows: 10,
 	            //newly added
-	            queryImport: "all", //value get from checkbox
 	            importEntered: "",
 
-	            queryCallsites: "all", //value get from checkbox
 	            callsite: "", //input of callsites
 
-	            queryMethods: "", //value get from checkbox
 	            callsiteAction: "all",
 	            importAction: "all"
+
 	        };
 	        return _this;
 	    }
@@ -25516,26 +25514,13 @@
 	        value: function onSubmit(event) {
 	            event.preventDefault();
 	            /*
-	            ======================================================
-	            Parse query
-	            ======================================================
-	            */
-	            /*
-	            var initialQuery = this.state.query;
-	             var field = this.state.queryImport;
-	            var imports = this.state.query;
-	            var af=null, rf = null;
-	            if(field === 'imports'){
-	                af = 'c_imports_added_t';
-	                rf = 'c_imports_removed_t';
-	                initialQuery = af+':'+imports+' OR '+rf+':'+imports;
-	                //console.log(initialQuery)
-	            }
-	            //console.log('filter:',this.state.filter);
-	            */
+	             ======================================================
+	             Parse query
+	             ======================================================
+	             */
 	            //TODO: Rephrase the query filter
 	            var initialFilter = [];
-	            if (this.state.queryImport === 'imports') {
+	            if (this.state.importEntered != '') {
 	                switch (this.state.importAction) {
 	                    case 'added':
 	                        var importFl = 'c_imports_added_t:' + this.state.importEntered;
@@ -25554,16 +25539,8 @@
 	                }
 	                initialFilter.push(importFl);
 	            }
-	            if (this.state.queryMethods === 'methods') {
-	                switch (initialFilter) {
-	                    case null:
-	                        initialFilter = 'c_methods_t:' + this.state.filter;
-	                        break;
-	                    default:
-	                        initialFilter += ' AND c_methods_t:' + this.state.filter;
-	                }
-	            }
-	            if (this.state.queryCallsites === 'callsites') {
+
+	            if (this.state.callsite != '') {
 	                switch (this.state.callsiteAction) {
 	                    case 'added':
 	                        var callsiteFl = 'c_callsites_added_t:' + this.state.callsite;
@@ -25597,6 +25574,8 @@
 	                    "hl.fragsize": 500
 	                }
 	            };
+	            console.log('send parameters', searchParams, searchParams.query);
+
 	            this.props.doSearch(searchParams);
 	        }
 	    }, {
@@ -25618,16 +25597,14 @@
 	        value: function handleChange(event, index, value) {
 	            event.preventDefault();
 	            this.setState({
-	                callsiteAction: value,
-	                queryCallsites: 'callsites'
+	                callsiteAction: value
 	            });
 	        }
 	    }, {
 	        key: 'handleimChange',
 	        value: function handleimChange(event, index, value) {
 	            this.setState({
-	                importAction: value,
-	                queryImport: 'imports'
+	                importAction: value
 	            });
 	        }
 	    }, {
@@ -25643,9 +25620,7 @@
 	            var tmpCommitObjs;
 
 	            var commitContents;
-
 	            if (this.props.solrConnector.response != null) {
-	                console.log('see', this.props.solrConnector.response.response.docs);
 
 	                numFound = this.props.solrConnector.response.response.numFound;
 	                var fieldsArray = Object.keys(this.props.solrConnector.response.response.docs[0]);
@@ -25663,13 +25638,11 @@
 	                    //});
 	                    //for diff.js
 	                    var query = this.state.importEntered; //value from input
-	                    var importsChecked = this.state.queryImport; //value from checkbox
 	                    var callsite = this.state.callsite;
-	                    var queryCallsites = this.state.queryCallsites;
+	                    console.log('see', this.props.solrConnector.response.response.docs);
 
 	                    tmpCommitObjs = this.props.solrConnector.response.response.docs.map(function (s, i) {
-	                        return _react2.default.createElement(_diff2.default, { commit: s, data: query, key: i, queryImport: importsChecked, callsite: callsite,
-	                            queryCallsites: queryCallsites
+	                        return _react2.default.createElement(_diff2.default, { commit: s, data: query, key: i, callsite: callsite
 	                        });
 	                    });
 	                    //for contents.js
@@ -25715,114 +25688,57 @@
 	                                _react2.default.createElement(
 	                                    'h4',
 	                                    null,
-	                                    'searchParams:'
+	                                    'Search Parameters:'
 	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'col s12 m12 l12' },
+	                                    'Imports: ',
+	                                    " ",
 	                                    _react2.default.createElement(
-	                                        'p',
-	                                        null,
-	                                        'solrSearchUrl: ',
-	                                        " ",
-	                                        _react2.default.createElement('input', { type: 'text', value: this.state.solrSearchUrl,
-	                                            onChange: function onChange(e) {
-	                                                _this2.setState({ solrSearchUrl: e.target.value });
-	                                            } })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'col s12 m12 l12' },
-	                                    _react2.default.createElement(
-	                                        'span',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            _DropDownMenu2.default,
-	                                            { value: this.state.importAction, onChange: this.handleimChange.bind(this), labelStyle: styles.customWidth },
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'all', primaryText: 'All Imports' }),
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'added', primaryText: 'Added' }),
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'removed', primaryText: 'Removed' }),
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'modified', primaryText: 'Modified' })
-	                                        ),
-	                                        _react2.default.createElement('input', { className: 'with-gap', name: 'group3', type: 'checkbox', id: 'methods', value: 'methods',
-	                                            onChange: function onChange(e) {
-	                                                _this2.setState({ queryMethods: 'methods' });
-	                                            } }),
-	                                        _react2.default.createElement(
-	                                            'label',
-	                                            { htmlFor: 'methods' },
-	                                            'Methods'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            _DropDownMenu2.default,
-	                                            { value: this.state.callsiteAction, onChange: this.handleChange.bind(this), labelStyle: styles.customWidth },
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'all', primaryText: 'All Callsites' }),
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'added', primaryText: 'Added' }),
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'removed', primaryText: 'Removed' }),
-	                                            _react2.default.createElement(_MenuItem2.default, { value: 'modified', primaryText: 'Modified' })
-	                                        )
+	                                        _DropDownMenu2.default,
+	                                        { value: this.state.importAction, onChange: this.handleimChange.bind(this), labelStyle: styles.customWidth },
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'all', primaryText: 'All' }),
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'added', primaryText: 'Added' }),
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'removed', primaryText: 'Removed' }),
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'modified', primaryText: 'Modified' })
 	                                    ),
+	                                    _react2.default.createElement('input', { type: 'text', value: this.state.importEntered,
+	                                        onChange: function onChange(e) {
+	                                            _this2.setState({ importEntered: e.target.value });
+	                                        } })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'col s12 m12 l12' },
+	                                    'Method Calls: ',
+	                                    " ",
+	                                    _react2.default.createElement(
+	                                        _DropDownMenu2.default,
+	                                        { value: this.state.callsiteAction, onChange: this.handleChange.bind(this), labelStyle: styles.customWidth },
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'all', primaryText: 'All' }),
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'added', primaryText: 'Added' }),
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'removed', primaryText: 'Removed' }),
+	                                        _react2.default.createElement(_MenuItem2.default, { value: 'modified', primaryText: 'Modified' })
+	                                    ),
+	                                    _react2.default.createElement('input', { type: 'text', value: this.state.callsite,
+	                                        onChange: function onChange(e) {
+	                                            _this2.setState({ callsite: e.target.value });
+	                                        } })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'col s12 m12 l12' },
 	                                    _react2.default.createElement(
 	                                        'p',
 	                                        null,
-	                                        'query: ',
+	                                        'Raw Solr Query: ',
 	                                        " ",
 	                                        _react2.default.createElement('input', { type: 'text', value: this.state.query,
 	                                            onChange: function onChange(e) {
 	                                                _this2.setState({ query: e.target.value });
 	                                            } }),
 	                                        " "
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        null,
-	                                        'imports(fq): ',
-	                                        " ",
-	                                        _react2.default.createElement('input', { type: 'text', value: this.state.importEntered,
-	                                            onChange: function onChange(e) {
-	                                                _this2.setState({ importEntered: e.target.value });
-	                                            } }),
-	                                        " "
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        null,
-	                                        'callsites(fq): ',
-	                                        " ",
-	                                        _react2.default.createElement('input', { type: 'text', value: this.state.callsite,
-	                                            onChange: function onChange(e) {
-	                                                _this2.setState({ callsite: e.target.value });
-	                                            } }),
-	                                        " "
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'col s12 m12 l12' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        null,
-	                                        'method(fq): ',
-	                                        " ",
-	                                        _react2.default.createElement('input', { type: 'text', value: this.state.filter,
-	                                            onChange: function onChange(e) {
-	                                                _this2.setState({ filter: e.target.value });
-	                                            } })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'col s12 m12 l12' },
-	                                    _react2.default.createElement(
-	                                        'p',
-	                                        null,
-	                                        'fetchFields(fl): ',
-	                                        " ",
-	                                        _react2.default.createElement('input', { type: 'text', value: this.state.fetchFields,
-	                                            onChange: function onChange(e) {
-	                                                _this2.setState({ fetchFields: e.target.value });
-	                                            } })
 	                                    )
 	                                ),
 	                                _react2.default.createElement(
@@ -25849,7 +25765,7 @@
 	                                ),
 	                                _react2.default.createElement(
 	                                    'p',
-	                                    null,
+	                                    { className: 'submit' },
 	                                    _react2.default.createElement(
 	                                        'button',
 	                                        { className: 'waves-effect waves-light btn deep-purple darken-3', type: 'submit', onClick: this.onSubmit.bind(this) },
@@ -44085,15 +44001,25 @@
 	        fontSize: 14,
 	        fontWeight: 800
 	    },
-	    table: {
-	        fontSize: 12
-	    },
 	    customWidth: {
 	        paddingLeft: 9
 	    },
 	    codeSnippet: {
 	        fontFamily: "Fira Mono",
 	        fontSize: 14
+	    },
+	    methodSnippet: {
+	        fontFamily: "Fira Mono",
+	        fontSize: 14,
+	        backgroundColor: '#f5f5f5',
+	        paddingLeft: 50,
+	        paddingRight: 50
+	    },
+	    buttonStyle: {
+	        fontSize: 12,
+	        fontWeight: 450,
+	        paddingLeft: 5,
+	        paddingBottom: 10
 	    }
 	};
 
@@ -44138,19 +44064,13 @@
 	        value: function render() {
 	            var commit = this.props.commit;
 
-	            var queryImport = this.props.queryImport; //field is 'imports'
-	            var queryCallsite = this.props.queryCallsites; //field is 'callsites'
 	            var importEntered = this.props.data; //input imposts
 	            var callsiteEntered = this.props.callsite; //input callsites
-	            /*
-	            console.log('1',queryImport)
-	            console.log('2',queryCallsite)
-	            console.log('3',importEntered)
-	            console.log('4',callsiteEntered)
-	            */
+
 	            var fileName = commit.name_sni;
-	            var browseFile = 'https://github.com/' + commit.repo_sni + '/tree/' + commit.c_hash_sni;
+	            var browseFile = 'https://github.com/' + commit.repo_sni + '/issues/';
 	            var patch = [];
+	            var method = [];
 	            var add = 0;
 	            var remove = 0;
 	            var parent_hash = commit.p_hash_sni;
@@ -44171,6 +44091,22 @@
 	                }
 	            });
 
+	            //parse whole content
+	            if (callsiteEntered != '') {
+	                commit.c_contents_t[0].split("\n").forEach(function (line, index) {
+	                    if (line.length > 0) {
+	                        if (line.match(callsiteEntered)) {
+	                            for (var i = index - 4; i < index + 4; i++) {
+	                                method.push(commit.c_contents_t[0].split("\n")[i]);
+	                            }method.push('=================================');
+	                        }
+	                    }
+	                });
+	                method = method.join('\n');
+	            } else {
+	                method = "Please specify a method first!";
+	            }
+
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -44186,15 +44122,35 @@
 	                        href: sourceCode,
 	                        target: '_blank',
 	                        rightIconButton: _react2.default.createElement(_FlatButton2.default, {
-	                            label: 'Browse Files',
+	                            label: 'See Issues',
 	                            href: browseFile,
 	                            target: '_blank',
-	                            secondary: true,
+	                            'default': true,
 	                            icon: _react2.default.createElement(_FontIcon2.default, { className: 'fa fa-github fa-lg' })
 	                        }),
 	                        style: styles.item1
 	                    }), _react2.default.createElement(_List.ListItem, {
 	                        key: 1,
+	                        primaryText: ["Expand to view where method gets called", _react2.default.createElement(_FlatButton2.default, {
+	                            label: 'All Diff Files',
+	                            href: sourceDiff,
+	                            target: '_blank',
+	                            icon: _react2.default.createElement(_FontIcon2.default, { className: 'fa fa-plus fa-lg', style: { fontSize: 15 } }),
+	                            labelStyle: styles.buttonStyle
+	                        })],
+	                        nestedItems: [_react2.default.createElement(
+	                            'pre',
+	                            { style: { marginTop: 0, marginBottom: 0 } },
+	                            _react2.default.createElement(
+	                                'code',
+	                                null,
+	                                method
+	                            )
+	                        )],
+	                        nestedListStyle: styles.methodSnippet,
+	                        style: styles.headline
+	                    }), _react2.default.createElement(_List.ListItem, {
+	                        key: 2,
 	                        primaryText: commit.c_patch_t[0].split("\n").map(function (i, index) {
 	                            if (callsiteEntered != '') {
 	                                if (i.includes(callsiteEntered)) {
@@ -44277,8 +44233,6 @@
 	                                )
 	                            );
 	                        }),
-	                        href: sourceDiff,
-	                        target: '_blank',
 	                        style: styles.codeSnippet
 	                    })]
 	                })
@@ -80536,7 +80490,7 @@
 	                    _react2.default.createElement(
 	                        'a',
 	                        { href: '#', className: 'brand-logo center' },
-	                        'Fixr Demo'
+	                        'Fixr Relevant Code Search'
 	                    ),
 	                    _react2.default.createElement(
 	                        'a',
