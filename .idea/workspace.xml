@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/backup/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/backup/demo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/app.js" afterPath="$PROJECT_DIR$/lib/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/demo.js" afterPath="$PROJECT_DIR$/lib/src/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/navbar.js" afterPath="$PROJECT_DIR$/lib/src/navbar.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="diff.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
               <caret line="137" column="63" selection-start-line="137" selection-start-column="63" selection-end-line="137" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -144,9 +148,9 @@
         <option value="$PROJECT_DIR$/lib/src/Connector.js" />
         <option value="$PROJECT_DIR$/lib/src/app.js" />
         <option value="$PROJECT_DIR$/node_modules/react-solr-connector/lib/react-solr-connector.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/src/demo.js" />
         <option value="$PROJECT_DIR$/lib/src/diff.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1032,12 +1036,12 @@
       <workItem from="1478062932892" duration="3768000" />
       <workItem from="1478109082039" duration="2285000" />
       <workItem from="1478161791299" duration="613000" />
-      <workItem from="1478190270589" duration="26776000" />
+      <workItem from="1478190270589" duration="26874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284659000" />
+    <option name="totallyTimeSpent" value="284757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -1287,14 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1335,6 +1331,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="137" column="63" selection-start-line="137" selection-start-column="63" selection-end-line="137" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
