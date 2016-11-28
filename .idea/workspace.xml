@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/list.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/searchpanel.js" afterPath="$PROJECT_DIR$/lib/src/searchpanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,38 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-              <folding>
-                <element signature="e#39#65#0" expanded="true" />
-                <element signature="e#436#959#0" expanded="false" />
-                <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
-                <element signature="e#2540#2838#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fieldlist.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/fieldlist.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1477373414000" expanded="true" signature="950:1027" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="465">
               <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -79,16 +49,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2070">
-              <caret line="269" column="86" selection-start-line="269" selection-start-column="86" selection-end-line="269" selection-end-column="86" />
+            <state relative-caret-position="2205">
+              <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding>
                 <element signature="e#423#635#0" expanded="false" />
-                <element signature="n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
                 <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-                <element signature="e#6502#6762#0" expanded="false" />
+                <element signature="e#6559#6819#0" expanded="false" />
                 <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
               </folding>
             </state>
@@ -165,9 +134,9 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/lib/src/app.js" />
         <option value="$PROJECT_DIR$/lib/src/navbar.js" />
-        <option value="$PROJECT_DIR$/lib/src/searchpanel.js" />
         <option value="$PROJECT_DIR$/lib/src/visualize.js" />
         <option value="$PROJECT_DIR$/lib/src/diff.js" />
+        <option value="$PROJECT_DIR$/lib/src/searchpanel.js" />
       </list>
     </option>
   </component>
@@ -1058,12 +1027,12 @@
       <workItem from="1478403458030" duration="12854000" />
       <workItem from="1479242096008" duration="966000" />
       <workItem from="1480223666492" duration="6927000" />
-      <workItem from="1480273700984" duration="14401000" />
+      <workItem from="1480273700984" duration="16337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328716000" />
+    <option name="totallyTimeSpent" value="330652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-52" y="23" width="1274" height="712" extended-state="0" />
@@ -1328,16 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/list.js" />
     <entry file="file://$PROJECT_DIR$/lib/src/fieldlist.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1350,16 +1309,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
+    <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="269" column="86" selection-start-line="269" selection-start-column="86" selection-end-line="269" selection-end-column="86" />
+        <state relative-caret-position="453">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <element signature="e#423#635#0" expanded="false" />
-            <element signature="n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-            <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-            <element signature="e#6502#6762#0" expanded="false" />
-            <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
+            <element signature="e#39#65#0" expanded="true" />
+            <element signature="e#436#959#0" expanded="false" />
+            <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
+            <element signature="e#2503#2801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1374,15 +1332,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
+    <entry file="file://$PROJECT_DIR$/lib/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
-            <element signature="e#39#65#0" expanded="true" />
-            <element signature="e#436#959#0" expanded="false" />
-            <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
-            <element signature="e#2540#2838#0" expanded="false" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2205">
+          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding>
+            <element signature="e#423#635#0" expanded="false" />
+            <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
+            <element signature="e#6559#6819#0" expanded="false" />
+            <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
           </folding>
         </state>
       </provider>
