@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/searchpanel.js" afterPath="$PROJECT_DIR$/lib/src/searchpanel.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -37,6 +36,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="diff.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-27">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding>
+                <element signature="e#39#65#0" expanded="true" />
+                <element signature="e#436#959#0" expanded="false" />
+                <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
+                <element signature="e#2503#2801#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,12 +66,12 @@
       <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2205">
-              <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="234" column="40" selection-start-line="234" selection-start-column="40" selection-end-line="234" selection-end-column="40" />
               <folding>
                 <element signature="e#423#635#0" expanded="false" />
                 <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-                <element signature="e#6559#6819#0" expanded="false" />
+                <element signature="e#6872#7132#0" expanded="false" />
                 <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
               </folding>
             </state>
@@ -151,9 +165,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-52" />
+    <option name="x" value="6" />
     <option name="y" value="23" />
-    <option name="width" value="1274" />
+    <option name="width" value="1332" />
     <option name="height" value="712" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -1027,15 +1041,15 @@
       <workItem from="1478403458030" duration="12854000" />
       <workItem from="1479242096008" duration="966000" />
       <workItem from="1480223666492" duration="6927000" />
-      <workItem from="1480273700984" duration="16337000" />
+      <workItem from="1480273700984" duration="19919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330652000" />
+    <option name="totallyTimeSpent" value="334234000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-52" y="23" width="1274" height="712" extended-state="0" />
+    <frame x="6" y="23" width="1332" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1063,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18602826" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17792793" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1309,19 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#65#0" expanded="true" />
-            <element signature="e#436#959#0" expanded="false" />
-            <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
-            <element signature="e#2503#2801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1342,14 +1343,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#65#0" expanded="true" />
+            <element signature="e#436#959#0" expanded="false" />
+            <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
+            <element signature="e#2503#2801#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+        <state relative-caret-position="256">
+          <caret line="234" column="40" selection-start-line="234" selection-start-column="40" selection-end-line="234" selection-end-column="40" />
           <folding>
             <element signature="e#423#635#0" expanded="false" />
             <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-            <element signature="e#6559#6819#0" expanded="false" />
+            <element signature="e#6872#7132#0" expanded="false" />
             <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
           </folding>
         </state>
