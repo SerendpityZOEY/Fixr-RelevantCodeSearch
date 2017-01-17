@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/searchpanel.js" afterPath="$PROJECT_DIR$/lib/src/searchpanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +50,8 @@
       <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="228" column="29" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
+            <state relative-caret-position="420">
+              <caret line="321" column="60" selection-start-line="321" selection-start-column="60" selection-end-line="321" selection-end-column="60" />
               <folding>
                 <element signature="e#215#259#0" expanded="true" />
                 <element signature="e#423#635#0" expanded="false" />
@@ -1059,12 +1055,12 @@
       <workItem from="1480273700984" duration="20091000" />
       <workItem from="1480354987074" duration="8008000" />
       <workItem from="1480442909778" duration="8841000" />
-      <workItem from="1484599799132" duration="7227000" />
+      <workItem from="1484599799132" duration="7505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358482000" />
+    <option name="totallyTimeSpent" value="358760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-49" y="23" width="1332" height="709" extended-state="0" />
@@ -1378,8 +1374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="228" column="29" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
+        <state relative-caret-position="420">
+          <caret line="321" column="60" selection-start-line="321" selection-start-column="60" selection-end-line="321" selection-end-column="60" />
           <folding>
             <element signature="e#215#259#0" expanded="true" />
             <element signature="e#423#635#0" expanded="false" />
