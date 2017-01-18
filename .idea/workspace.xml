@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/page2/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/page2/navbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/contents.js" afterPath="$PROJECT_DIR$/lib/src/contents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="visualize.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="visualize.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+            <state relative-caret-position="-18">
+              <caret line="62" column="58" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
               <folding>
                 <element signature="e#38#64#0" expanded="true" />
               </folding>
@@ -59,53 +51,10 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="435">
               <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diff.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="181" column="51" selection-start-line="181" selection-start-column="51" selection-end-line="181" selection-end-column="51" />
-              <folding>
-                <element signature="e#39#65#0" expanded="true" />
-                <element signature="e#436#959#0" expanded="false" />
-                <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contents.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/contents.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#51#91#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1082">
-              <caret line="321" column="60" selection-start-line="321" selection-start-column="60" selection-end-line="321" selection-end-column="60" />
-              <folding>
-                <element signature="e#423#635#0" expanded="false" />
-                <element signature="e#4092#4899#0" expanded="false" />
-                <element signature="e#4997#5985#0" expanded="false" />
-                <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-                <element signature="e#9446#9706#0" expanded="false" />
-                <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -181,9 +130,9 @@
         <option value="$PROJECT_DIR$/lib/src/page2/navbar.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/lib/src/page2/main.js" />
-        <option value="$PROJECT_DIR$/lib/src/visualize.js" />
         <option value="$PROJECT_DIR$/lib/src/contents.js" />
         <option value="$PROJECT_DIR$/lib/src/diff.js" />
+        <option value="$PROJECT_DIR$/lib/src/visualize.js" />
       </list>
     </option>
   </component>
@@ -1059,12 +1008,12 @@
       <workItem from="1484599799132" duration="7505000" />
       <workItem from="1484642527769" duration="179000" />
       <workItem from="1484642781985" duration="4763000" />
-      <workItem from="1484701936278" duration="4010000" />
+      <workItem from="1484701936278" duration="4530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367712000" />
+    <option name="totallyTimeSpent" value="368232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -1345,26 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
-          <folding>
-            <element signature="e#38#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1082">
@@ -1398,6 +1327,26 @@
             <element signature="e#39#65#0" expanded="true" />
             <element signature="e#436#959#0" expanded="false" />
             <element signature="n#!!block;n#parseData#0;n#Diff#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="62" column="58" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+          <folding>
+            <element signature="e#38#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
