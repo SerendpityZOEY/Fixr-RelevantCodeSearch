@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/diff.js" afterPath="$PROJECT_DIR$/lib/src/diff.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/searchpanel.js" afterPath="$PROJECT_DIR$/lib/src/searchpanel.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -61,14 +60,14 @@
       <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+            <state relative-caret-position="405">
+              <caret line="234" column="33" selection-start-line="234" selection-start-column="33" selection-end-line="234" selection-end-column="33" />
               <folding>
                 <element signature="e#423#635#0" expanded="false" />
-                <element signature="e#4083#4890#0" expanded="false" />
-                <element signature="e#4988#5976#0" expanded="false" />
-                <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-                <element signature="e#9437#9697#0" expanded="false" />
+                <element signature="n#ImportInput#0" expanded="false" />
+                <element signature="e#4093#4900#0" expanded="false" />
+                <element signature="e#4998#5986#0" expanded="false" />
+                <element signature="e#9454#9714#0" expanded="false" />
                 <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
               </folding>
             </state>
@@ -1002,12 +1001,12 @@
       <workItem from="1484642527769" duration="179000" />
       <workItem from="1484642781985" duration="4763000" />
       <workItem from="1484701936278" duration="4530000" />
-      <workItem from="1485116960542" duration="4756000" />
+      <workItem from="1485116960542" duration="7505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372988000" />
+    <option name="totallyTimeSpent" value="375737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -1328,14 +1327,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        <state relative-caret-position="405">
+          <caret line="234" column="33" selection-start-line="234" selection-start-column="33" selection-end-line="234" selection-end-column="33" />
           <folding>
             <element signature="e#423#635#0" expanded="false" />
-            <element signature="e#4083#4890#0" expanded="false" />
-            <element signature="e#4988#5976#0" expanded="false" />
-            <element signature="n#!!block;n#methodQuery#0;n#!!block;n#onSubmit#0;n#Searchpanel#0" expanded="false" />
-            <element signature="e#9437#9697#0" expanded="false" />
+            <element signature="n#ImportInput#0" expanded="false" />
+            <element signature="e#4093#4900#0" expanded="false" />
+            <element signature="e#4998#5986#0" expanded="false" />
+            <element signature="e#9454#9714#0" expanded="false" />
             <element signature="n#!!block;n#handleimChange#0;n#Searchpanel#0" expanded="false" />
           </folding>
         </state>
