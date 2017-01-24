@@ -65,10 +65,10 @@
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+            <state relative-caret-position="270">
+              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
               <folding>
-                <element signature="e#2110#2652#0" expanded="false" />
+                <element signature="e#2300#2842#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1042,12 +1042,12 @@
       <workItem from="1484642781985" duration="4763000" />
       <workItem from="1484701936278" duration="4530000" />
       <workItem from="1485116960542" duration="8729000" />
-      <workItem from="1485211362235" duration="7299000" />
+      <workItem from="1485211362235" duration="8986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384260000" />
+    <option name="totallyTimeSpent" value="385947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-184" y="79" width="1280" height="714" extended-state="0" />
@@ -1380,10 +1380,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+        <state relative-caret-position="270">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
           <folding>
-            <element signature="e#2110#2652#0" expanded="false" />
+            <element signature="e#2300#2842#0" expanded="false" />
           </folding>
         </state>
       </provider>
