@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/graph.js" afterPath="$PROJECT_DIR$/lib/src/graph.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -36,7 +37,7 @@
       <file leaf-file-name="searchpanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
+            <state relative-caret-position="5220">
               <caret line="443" column="117" selection-start-line="443" selection-start-column="117" selection-end-line="443" selection-end-column="117" />
               <folding>
                 <element signature="e#423#635#0" expanded="false" />
@@ -53,7 +54,7 @@
       <file leaf-file-name="graphgrid.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/graphgrid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
+            <state relative-caret-position="1260">
               <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -65,11 +66,9 @@
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-              <folding>
-                <element signature="e#2300#2842#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +76,7 @@
       <file leaf-file-name="diff.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="210">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
               <folding>
                 <element signature="e#39#65#0" expanded="true" />
@@ -90,7 +89,7 @@
       <file leaf-file-name="visualize.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-973">
+            <state relative-caret-position="30">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#38#64#0" expanded="true" />
@@ -186,8 +185,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-184" />
-    <option name="y" value="79" />
+    <option name="x" value="89" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="714" />
   </component>
@@ -216,9 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +281,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1042,15 +1041,16 @@
       <workItem from="1484642781985" duration="4763000" />
       <workItem from="1484701936278" duration="4530000" />
       <workItem from="1485116960542" duration="8729000" />
-      <workItem from="1485211362235" duration="8986000" />
+      <workItem from="1485211362235" duration="9113000" />
+      <workItem from="1485333894923" duration="2196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="385947000" />
+    <option name="totallyTimeSpent" value="388270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-184" y="79" width="1280" height="714" extended-state="0" />
+    <frame x="89" y="23" width="1280" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1320,7 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,13 +1327,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/searchpanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
+        <state relative-caret-position="5220">
           <caret line="443" column="117" selection-start-line="443" selection-start-column="117" selection-end-line="443" selection-end-column="117" />
           <folding>
             <element signature="e#423#635#0" expanded="false" />
@@ -1349,7 +1347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-973">
+        <state relative-caret-position="30">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#38#64#0" expanded="true" />
@@ -1359,7 +1357,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/diff.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="210">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
           <folding>
             <element signature="e#39#65#0" expanded="true" />
@@ -1370,7 +1368,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/graphgrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="1260">
           <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1380,11 +1378,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-          <folding>
-            <element signature="e#2300#2842#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
