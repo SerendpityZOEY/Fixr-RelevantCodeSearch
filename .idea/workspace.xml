@@ -66,9 +66,13 @@
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="1740">
+              <caret line="164" column="59" selection-start-line="164" selection-start-column="59" selection-end-line="164" selection-end-column="59" />
+              <folding>
+                <element signature="e#1245#1447#0" expanded="false" />
+                <element signature="e#1470#2357#0" expanded="false" />
+                <element signature="e#2380#3021#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,7 +189,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="89" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="714" />
@@ -215,6 +218,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,9 +287,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1042,15 +1045,16 @@
       <workItem from="1484701936278" duration="4530000" />
       <workItem from="1485116960542" duration="8729000" />
       <workItem from="1485211362235" duration="9113000" />
-      <workItem from="1485333894923" duration="2196000" />
+      <workItem from="1485333894923" duration="2254000" />
+      <workItem from="1485365600005" duration="3189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388270000" />
+    <option name="totallyTimeSpent" value="391517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="89" y="23" width="1280" height="714" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="714" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1191,6 +1195,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="442">
@@ -1198,9 +1205,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/dynamic.js" />
@@ -1378,9 +1382,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="1740">
+          <caret line="164" column="59" selection-start-line="164" selection-start-column="59" selection-end-line="164" selection-end-column="59" />
+          <folding>
+            <element signature="e#1245#1447#0" expanded="false" />
+            <element signature="e#1470#2357#0" expanded="false" />
+            <element signature="e#2380#3021#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
