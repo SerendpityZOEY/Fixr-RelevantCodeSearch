@@ -30,3 +30,6 @@ span.cm-variable-3 { color: #ffb86c; }
 .cm-invalidchar {display:none;}
 .CodeMirror-activeline-background { background: rgba(255,255,255,0.1); }
 .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }
+
+.CodeMirror-selected { background: #f1fa8c; }
+.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
