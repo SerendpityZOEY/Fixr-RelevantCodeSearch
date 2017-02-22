@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/editor.js" afterPath="$PROJECT_DIR$/lib/src/editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/graphcard.js" afterPath="$PROJECT_DIR$/lib/src/graphcard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/linesofcode.js" afterPath="$PROJECT_DIR$/lib/src/linesofcode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +39,8 @@
       <file leaf-file-name="editor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+            <state relative-caret-position="450">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
                 <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
@@ -1036,12 +1033,12 @@
       <workItem from="1487009280589" duration="16380000" />
       <workItem from="1487183196066" duration="16330000" />
       <workItem from="1487239939077" duration="6650000" />
-      <workItem from="1487709872965" duration="13500000" />
+      <workItem from="1487709872965" duration="13645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="461676000" />
+    <option name="totallyTimeSpent" value="461821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="23" width="1280" height="709" extended-state="0" />
@@ -1400,8 +1397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+        <state relative-caret-position="450">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
             <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
