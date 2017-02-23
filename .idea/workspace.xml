@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/card.js" afterPath="$PROJECT_DIR$/lib/src/card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/detailcard.js" afterPath="$PROJECT_DIR$/lib/src/detailcard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/editor.js" afterPath="$PROJECT_DIR$/lib/src/editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/linesofcode.js" afterPath="$PROJECT_DIR$/lib/src/linesofcode.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,14 +30,14 @@
       <file leaf-file-name="card.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+            <state relative-caret-position="285">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="e#37#63#0" expanded="true" />
                 <element signature="e#348#901#0" expanded="false" />
-                <element signature="e#1884#2097#0" expanded="false" />
-                <element signature="e#5579#7149#0" expanded="false" />
-                <element signature="e#7173#7612#0" expanded="false" />
+                <element signature="e#2053#2266#0" expanded="false" />
+                <element signature="e#6075#7645#0" expanded="false" />
+                <element signature="e#7669#8108#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -42,8 +46,8 @@
       <file leaf-file-name="editor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="137" column="105" selection-start-line="137" selection-start-column="105" selection-end-line="137" selection-end-column="105" />
+            <state relative-caret-position="402">
+              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
               <folding>
                 <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
                 <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
@@ -79,9 +83,10 @@
       <file leaf-file-name="detailcard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-948">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
+                <element signature="e#37#63#0" expanded="true" />
                 <element signature="e#359#882#0" expanded="false" />
                 <element signature="n#!!block;n#parseData#0;n#DetailCard#0" expanded="false" />
               </folding>
@@ -104,8 +109,8 @@
       <file leaf-file-name="linesofcode.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/linesofcode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="450">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -175,13 +180,13 @@
         <option value="$PROJECT_DIR$/lib/src/app.js" />
         <option value="$PROJECT_DIR$/lib/src/newround.js" />
         <option value="$PROJECT_DIR$/lib/src/navbar.js" />
-        <option value="$PROJECT_DIR$/lib/src/detailcard.js" />
         <option value="$PROJECT_DIR$/lib/src/commitdetail.js" />
         <option value="$PROJECT_DIR$/lib/src/list.js" />
         <option value="$PROJECT_DIR$/lib/src/graph.js" />
         <option value="$PROJECT_DIR$/lib/src/visualize.js" />
-        <option value="$PROJECT_DIR$/lib/src/linesofcode.js" />
         <option value="$PROJECT_DIR$/lib/src/graphcard.js" />
+        <option value="$PROJECT_DIR$/lib/src/detailcard.js" />
+        <option value="$PROJECT_DIR$/lib/src/linesofcode.js" />
         <option value="$PROJECT_DIR$/lib/src/card.js" />
         <option value="$PROJECT_DIR$/lib/src/editor.js" />
       </list>
@@ -1049,12 +1054,12 @@
       <workItem from="1487183196066" duration="16330000" />
       <workItem from="1487239939077" duration="6650000" />
       <workItem from="1487709872965" duration="14341000" />
-      <workItem from="1487789238566" duration="12303000" />
+      <workItem from="1487789238566" duration="18317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474820000" />
+    <option name="totallyTimeSpent" value="480834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1280" height="709" extended-state="6" />
@@ -1341,17 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-948">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#359#882#0" expanded="false" />
-            <element signature="n#!!block;n#parseData#0;n#DetailCard#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/commitdetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1372,14 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/linesofcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1008">
@@ -1390,24 +1376,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/linesofcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#63#0" expanded="true" />
+            <element signature="e#359#882#0" expanded="false" />
+            <element signature="n#!!block;n#parseData#0;n#DetailCard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+        <state relative-caret-position="285">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#37#63#0" expanded="true" />
             <element signature="e#348#901#0" expanded="false" />
-            <element signature="e#1884#2097#0" expanded="false" />
-            <element signature="e#5579#7149#0" expanded="false" />
-            <element signature="e#7173#7612#0" expanded="false" />
+            <element signature="e#2053#2266#0" expanded="false" />
+            <element signature="e#6075#7645#0" expanded="false" />
+            <element signature="e#7669#8108#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="137" column="105" selection-start-line="137" selection-start-column="105" selection-end-line="137" selection-end-column="105" />
+        <state relative-caret-position="402">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
           <folding>
             <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
             <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
