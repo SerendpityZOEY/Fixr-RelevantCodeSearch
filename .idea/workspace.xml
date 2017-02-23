@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/trending.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/card.js" afterPath="$PROJECT_DIR$/lib/src/card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,22 +29,20 @@
       <file leaf-file-name="card.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-33">
-              <caret line="209" column="37" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+            <state relative-caret-position="462">
+              <caret line="395" column="59" selection-start-line="395" selection-start-column="59" selection-end-line="395" selection-end-column="59" />
               <folding>
                 <element signature="e#37#63#0" expanded="true" />
-                <element signature="e#348#901#0" expanded="false" />
-                <element signature="e#1215#1745#0" expanded="false" />
-                <element signature="e#1764#3030#0" expanded="false" />
-                <element signature="e#3048#3343#0" expanded="false" />
-                <element signature="e#3452#4255#0" expanded="false" />
-                <element signature="e#4272#5079#0" expanded="false" />
-                <element signature="e#6296#6509#0" expanded="false" />
-                <element signature="e#8613#9287#0" expanded="false" />
-                <element signature="e#9312#10882#0" expanded="false" />
-                <element signature="e#10906#11345#0" expanded="false" />
-                <element signature="e#11498#12485#0" expanded="false" />
-                <element signature="e#12508#13499#0" expanded="false" />
+                <element signature="e#390#943#0" expanded="false" />
+                <element signature="e#1676#2206#0" expanded="false" />
+                <element signature="e#2225#3491#0" expanded="false" />
+                <element signature="e#3509#3804#0" expanded="false" />
+                <element signature="e#3822#3899#0" expanded="false" />
+                <element signature="e#3915#4718#0" expanded="false" />
+                <element signature="e#4735#5542#0" expanded="false" />
+                <element signature="e#5831#6593#0" expanded="false" />
+                <element signature="e#7810#8023#0" expanded="false" />
+                <marker date="1487870337000" expanded="false" signature="1256:1658" ph="[...]" />
               </folding>
             </state>
           </provider>
@@ -50,23 +51,11 @@
       <file leaf-file-name="editor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="720">
               <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
               <folding>
                 <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
                 <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visualize.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#38#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +76,7 @@
       <file leaf-file-name="detailcard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
+            <state relative-caret-position="-378">
               <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#37#63#0" expanded="true" />
@@ -101,8 +90,8 @@
       <file leaf-file-name="graphcard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/graphcard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
+            <state relative-caret-position="795">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
               <folding>
                 <element signature="e#38#64#0" expanded="true" />
               </folding>
@@ -142,8 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo/visualize.js" />
-        <option value="$PROJECT_DIR$/demo/detail.js" />
         <option value="$PROJECT_DIR$/demo/fieldlist.js" />
         <option value="$PROJECT_DIR$/demo/contents.js" />
         <option value="$PROJECT_DIR$/demo/components/githubIcon.js" />
@@ -187,11 +174,13 @@
         <option value="$PROJECT_DIR$/lib/src/commitdetail.js" />
         <option value="$PROJECT_DIR$/lib/src/list.js" />
         <option value="$PROJECT_DIR$/lib/src/graph.js" />
-        <option value="$PROJECT_DIR$/lib/src/visualize.js" />
         <option value="$PROJECT_DIR$/lib/src/detailcard.js" />
         <option value="$PROJECT_DIR$/lib/src/linesofcode.js" />
         <option value="$PROJECT_DIR$/lib/src/graphcard.js" />
         <option value="$PROJECT_DIR$/lib/src/editor.js" />
+        <option value="$PROJECT_DIR$/lib/src/trendinganalysis.js" />
+        <option value="$PROJECT_DIR$/lib/src/visualize.js" />
+        <option value="$PROJECT_DIR$/lib/src/trending.js" />
         <option value="$PROJECT_DIR$/lib/src/card.js" />
       </list>
     </option>
@@ -1058,12 +1047,12 @@
       <workItem from="1487239939077" duration="6650000" />
       <workItem from="1487709872965" duration="14341000" />
       <workItem from="1487789238566" duration="19917000" />
-      <workItem from="1487840919757" duration="3680000" />
+      <workItem from="1487840919757" duration="6771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="486114000" />
+    <option name="totallyTimeSpent" value="489205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -1108,13 +1097,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/src/test.js" />
-    <entry file="file://$PROJECT_DIR$/lib/heroku/Procfile" />
     <entry file="file://$PROJECT_DIR$/public/js/testheroku.js" />
     <entry file="file://$PROJECT_DIR$/database.rules.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1347,16 +1334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/graphcard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
-          <folding>
-            <element signature="e#38#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/linesofcode.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1365,9 +1342,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/trendinganalysis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/graphcard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+          <folding>
+            <element signature="e#38#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
+        <state relative-caret-position="-378">
           <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#37#63#0" expanded="true" />
@@ -1387,10 +1382,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/trending.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#38#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="837">
+          <caret line="132" column="35" selection-start-line="132" selection-start-column="35" selection-end-line="132" selection-end-column="35" />
           <folding>
             <element signature="e#38#64#0" expanded="true" />
           </folding>
@@ -1399,7 +1404,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="720">
           <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
           <folding>
             <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
@@ -1410,22 +1415,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="209" column="37" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+        <state relative-caret-position="462">
+          <caret line="395" column="59" selection-start-line="395" selection-start-column="59" selection-end-line="395" selection-end-column="59" />
           <folding>
             <element signature="e#37#63#0" expanded="true" />
-            <element signature="e#348#901#0" expanded="false" />
-            <element signature="e#1215#1745#0" expanded="false" />
-            <element signature="e#1764#3030#0" expanded="false" />
-            <element signature="e#3048#3343#0" expanded="false" />
-            <element signature="e#3452#4255#0" expanded="false" />
-            <element signature="e#4272#5079#0" expanded="false" />
-            <element signature="e#6296#6509#0" expanded="false" />
-            <element signature="e#8613#9287#0" expanded="false" />
-            <element signature="e#9312#10882#0" expanded="false" />
-            <element signature="e#10906#11345#0" expanded="false" />
-            <element signature="e#11498#12485#0" expanded="false" />
-            <element signature="e#12508#13499#0" expanded="false" />
+            <element signature="e#390#943#0" expanded="false" />
+            <element signature="e#1676#2206#0" expanded="false" />
+            <element signature="e#2225#3491#0" expanded="false" />
+            <element signature="e#3509#3804#0" expanded="false" />
+            <element signature="e#3822#3899#0" expanded="false" />
+            <element signature="e#3915#4718#0" expanded="false" />
+            <element signature="e#4735#5542#0" expanded="false" />
+            <element signature="e#5831#6593#0" expanded="false" />
+            <element signature="e#7810#8023#0" expanded="false" />
+            <marker date="1487870337000" expanded="false" signature="1256:1658" ph="[...]" />
           </folding>
         </state>
       </provider>
