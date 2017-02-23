@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/card.js" afterPath="$PROJECT_DIR$/lib/src/card.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/editor.js" afterPath="$PROJECT_DIR$/lib/src/editor.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
@@ -44,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="387">
-              <caret line="137" column="160" selection-start-line="137" selection-start-column="160" selection-end-line="137" selection-end-column="160" />
+              <caret line="137" column="105" selection-start-line="137" selection-start-column="105" selection-end-line="137" selection-end-column="105" />
               <folding>
                 <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
                 <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
@@ -1050,12 +1049,12 @@
       <workItem from="1487183196066" duration="16330000" />
       <workItem from="1487239939077" duration="6650000" />
       <workItem from="1487709872965" duration="14341000" />
-      <workItem from="1487789238566" duration="11737000" />
+      <workItem from="1487789238566" duration="12303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474254000" />
+    <option name="totallyTimeSpent" value="474820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="23" width="1280" height="709" extended-state="6" />
@@ -1408,7 +1407,7 @@
     <entry file="file://$PROJECT_DIR$/lib/src/editor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
-          <caret line="137" column="160" selection-start-line="137" selection-start-column="160" selection-end-line="137" selection-end-column="160" />
+          <caret line="137" column="105" selection-start-line="137" selection-start-column="105" selection-end-line="137" selection-end-column="105" />
           <folding>
             <element signature="n#!!block;n#methodQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
             <element signature="n#!!block;n#importQuery#0;n#!!block;n#FilterProcessor#0;n#Editor#0" expanded="false" />
