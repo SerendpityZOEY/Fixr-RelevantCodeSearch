@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/trending.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/card.js" afterPath="$PROJECT_DIR$/lib/src/card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,20 +26,19 @@
       <file leaf-file-name="card.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="395" column="59" selection-start-line="395" selection-start-column="59" selection-end-line="395" selection-end-column="59" />
+            <state relative-caret-position="417">
+              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="e#37#63#0" expanded="true" />
                 <element signature="e#390#943#0" expanded="false" />
-                <element signature="e#1676#2206#0" expanded="false" />
-                <element signature="e#2225#3491#0" expanded="false" />
-                <element signature="e#3509#3804#0" expanded="false" />
-                <element signature="e#3822#3899#0" expanded="false" />
-                <element signature="e#3915#4718#0" expanded="false" />
-                <element signature="e#4735#5542#0" expanded="false" />
-                <element signature="e#5831#6593#0" expanded="false" />
-                <element signature="e#7810#8023#0" expanded="false" />
-                <marker date="1487870337000" expanded="false" signature="1256:1658" ph="[...]" />
+                <element signature="e#3147#3360#0" expanded="false" />
+                <element signature="e#4456#5130#0" expanded="false" />
+                <element signature="e#5155#6725#0" expanded="false" />
+                <element signature="e#6749#7188#0" expanded="false" />
+                <element signature="e#7212#7321#0" expanded="false" />
+                <element signature="e#9367#10313#0" expanded="false" />
+                <marker date="1487870597000" expanded="false" signature="7343:8330" ph="&lt;xml/&gt;" />
+                <marker date="1487870597000" expanded="false" signature="8353:9344" ph="&lt;xml/&gt;" />
               </folding>
             </state>
           </provider>
@@ -1047,12 +1043,12 @@
       <workItem from="1487239939077" duration="6650000" />
       <workItem from="1487709872965" duration="14341000" />
       <workItem from="1487789238566" duration="19917000" />
-      <workItem from="1487840919757" duration="6771000" />
+      <workItem from="1487840919757" duration="6972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489205000" />
+    <option name="totallyTimeSpent" value="489406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
@@ -1415,20 +1411,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="395" column="59" selection-start-line="395" selection-start-column="59" selection-end-line="395" selection-end-column="59" />
+        <state relative-caret-position="417">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="e#37#63#0" expanded="true" />
             <element signature="e#390#943#0" expanded="false" />
-            <element signature="e#1676#2206#0" expanded="false" />
-            <element signature="e#2225#3491#0" expanded="false" />
-            <element signature="e#3509#3804#0" expanded="false" />
-            <element signature="e#3822#3899#0" expanded="false" />
-            <element signature="e#3915#4718#0" expanded="false" />
-            <element signature="e#4735#5542#0" expanded="false" />
-            <element signature="e#5831#6593#0" expanded="false" />
-            <element signature="e#7810#8023#0" expanded="false" />
-            <marker date="1487870337000" expanded="false" signature="1256:1658" ph="[...]" />
+            <element signature="e#3147#3360#0" expanded="false" />
+            <element signature="e#4456#5130#0" expanded="false" />
+            <element signature="e#5155#6725#0" expanded="false" />
+            <element signature="e#6749#7188#0" expanded="false" />
+            <element signature="e#7212#7321#0" expanded="false" />
+            <element signature="e#9367#10313#0" expanded="false" />
+            <marker date="1487870597000" expanded="false" signature="7343:8330" ph="&lt;xml/&gt;" />
+            <marker date="1487870597000" expanded="false" signature="8353:9344" ph="&lt;xml/&gt;" />
           </folding>
         </state>
       </provider>
