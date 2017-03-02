@@ -19,7 +19,7 @@ For Mac:
 
 ## Running
 
-- Compile:
+- Compile(not necessary unless you want to print out complied script):
 ```
 $npm run-script build-app
 ```
