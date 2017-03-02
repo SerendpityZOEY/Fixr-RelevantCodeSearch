@@ -1,6 +1,6 @@
 # Solr Relevant Commit Search
 
-This application uses ReactJS to connect with Solr to search data. Applied Material UI and Materializecss for front-end.
+This application helps user to find relevant commit that fix a specific bug in Android development by refining search parameters.
 
 ## First Time Setup
 If you already have npm and node installed, you can skip this step.
@@ -29,25 +29,36 @@ $npm run-script build-app
 $npm start
 ```
 
-If the browser is not opened automatically, then view the page through this url:
-```
-localhost:8080
-```
-
 ## Install dependencies
 If you can't run the program, try the following command to install node modules locally.
 ```
 $npm install
 ```
 
-## Instructions
+## Searching Syntax:
 
-- The default query is `*:*` to fetch everything from Solr and display first 10 commits.
-- For filters, they are set to `all` by default, which will search within `add`, `remove`, `not being modified` fields for either import statements or callsites.
-    - Specify add/remove/modify/all from dropdown (optional)
-    - eg: type `android.app.Fragment` in imports text field, or type `getId` in callsites field to specify the exact text.
-    - Click search.
-- *Note*:Methods filter is under developing.
+#### import search:
+- android.app.Fragment;
+- import android.app.Fragment;
+
+#### method search:
+- createTable(db);
+- db.beginTransaction();
+- beginTransaction();
+
+By default, queries above will search both addition and deletion lines that contains these prarmeters.
+Using '+' as a prefix to indicate additions only
+Using '-' as a prefix to indicate deletions only
+Using 'all' as a prefix to indicate all actions(neither added nor deleted)
+Using '=>' as a predix to indicate full text search (will be disabed)
+
+## Iso Graph Search
+
+Under development
+
+## Trending Analysis
+
+Under development
 
 ![Screen Shot](docs/ScreenShot.png)
 
