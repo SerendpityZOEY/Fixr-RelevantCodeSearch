@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf98051-55a6-4b5b-977d-c789844ed17e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/card.js" afterPath="$PROJECT_DIR$/lib/src/card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/commitdetail.js" afterPath="$PROJECT_DIR$/lib/src/commitdetail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/detailcard.js" afterPath="$PROJECT_DIR$/lib/src/detailcard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/linesofcode.js" afterPath="$PROJECT_DIR$/lib/src/linesofcode.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/list.js" afterPath="$PROJECT_DIR$/lib/src/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/visualize.js" afterPath="$PROJECT_DIR$/lib/src/visualize.js" />
     </list>
     <ignored path="TestSolrv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +27,11 @@
       <file leaf-file-name="visualize.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="402">
+              <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
               <folding>
                 <element signature="e#38#64#0" expanded="true" />
+                <element signature="n#!!block;n#getPrevEditorCode#0;n#Visualize#0" expanded="false" />
                 <element signature="n#!!block;n#showDetail#0;n#Visualize#0" expanded="false" />
                 <element signature="n#!!block;n#closeDetail#0;n#Visualize#0" expanded="false" />
               </folding>
@@ -42,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="91" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="91" />
+            <state relative-caret-position="507">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -57,8 +54,8 @@
       <file leaf-file-name="detailcard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="111" column="118" selection-start-line="111" selection-start-column="118" selection-end-line="111" selection-end-column="118" />
+            <state relative-caret-position="-318">
+              <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
               <folding>
                 <element signature="e#37#63#0" expanded="true" />
                 <element signature="e#359#882#0" expanded="false" />
@@ -77,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="card.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="268" column="58" selection-start-line="268" selection-start-column="58" selection-end-line="268" selection-end-column="58" />
+            <state relative-caret-position="300">
+              <caret line="229" column="10" selection-start-line="229" selection-start-column="10" selection-end-line="229" selection-end-column="10" />
               <folding>
                 <element signature="e#37#63#0" expanded="true" />
                 <element signature="e#1248#1650#0" expanded="false" />
@@ -173,12 +170,12 @@
         <option value="$PROJECT_DIR$/lib/src/graphcard.js" />
         <option value="$PROJECT_DIR$/public/css/styles.css" />
         <option value="$PROJECT_DIR$/lib/src/editor.js" />
-        <option value="$PROJECT_DIR$/lib/src/list.js" />
         <option value="$PROJECT_DIR$/lib/src/commitdetail.js" />
-        <option value="$PROJECT_DIR$/lib/src/detailcard.js" />
         <option value="$PROJECT_DIR$/lib/src/visualize.js" />
         <option value="$PROJECT_DIR$/lib/src/linesofcode.js" />
         <option value="$PROJECT_DIR$/lib/src/card.js" />
+        <option value="$PROJECT_DIR$/lib/src/detailcard.js" />
+        <option value="$PROJECT_DIR$/lib/src/list.js" />
       </list>
     </option>
   </component>
@@ -1086,16 +1083,16 @@
       <workItem from="1488833424863" duration="17113000" />
       <workItem from="1488964155950" duration="870000" />
       <workItem from="1488994094157" duration="6859000" />
-      <workItem from="1489047283148" duration="2053000" />
+      <workItem from="1489047283148" duration="3807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558789000" />
+    <option name="totallyTimeSpent" value="560543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1108,7 +1105,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20078126" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20078126" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1400,12 +1397,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/list.js">
+    <entry file="file://$PROJECT_DIR$/lib/src/card.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="91" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="91" />
+        <state relative-caret-position="300">
+          <caret line="229" column="10" selection-start-line="229" selection-start-column="10" selection-end-line="229" selection-end-column="10" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#37#63#0" expanded="true" />
+            <element signature="e#1248#1650#0" expanded="false" />
+            <element signature="e#3146#3359#0" expanded="false" />
+            <element signature="e#5411#6085#0" expanded="false" />
+            <element signature="e#6110#7680#0" expanded="false" />
+            <element signature="e#7705#8144#0" expanded="false" />
+            <element signature="e#8168#8277#0" expanded="false" />
+            <element signature="e#9935#10125#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1418,25 +1422,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
+    <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="111" column="118" selection-start-line="111" selection-start-column="118" selection-end-line="111" selection-end-column="118" />
+        <state relative-caret-position="402">
+          <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
           <folding>
-            <element signature="e#37#63#0" expanded="true" />
-            <element signature="e#359#882#0" expanded="false" />
+            <element signature="e#38#64#0" expanded="true" />
+            <element signature="n#!!block;n#getPrevEditorCode#0;n#Visualize#0" expanded="false" />
+            <element signature="n#!!block;n#showDetail#0;n#Visualize#0" expanded="false" />
+            <element signature="n#!!block;n#closeDetail#0;n#Visualize#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/visualize.js">
+    <entry file="file://$PROJECT_DIR$/lib/src/detailcard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="-318">
+          <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
           <folding>
-            <element signature="e#38#64#0" expanded="true" />
-            <element signature="n#!!block;n#showDetail#0;n#Visualize#0" expanded="false" />
-            <element signature="n#!!block;n#closeDetail#0;n#Visualize#0" expanded="false" />
+            <element signature="e#37#63#0" expanded="true" />
+            <element signature="e#359#882#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1449,19 +1454,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/card.js">
+    <entry file="file://$PROJECT_DIR$/lib/src/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="268" column="58" selection-start-line="268" selection-start-column="58" selection-end-line="268" selection-end-column="58" />
+        <state relative-caret-position="507">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#37#63#0" expanded="true" />
-            <element signature="e#1248#1650#0" expanded="false" />
-            <element signature="e#3146#3359#0" expanded="false" />
-            <element signature="e#5411#6085#0" expanded="false" />
-            <element signature="e#6110#7680#0" expanded="false" />
-            <element signature="e#7705#8144#0" expanded="false" />
-            <element signature="e#8168#8277#0" expanded="false" />
-            <element signature="e#9935#10125#0" expanded="false" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
